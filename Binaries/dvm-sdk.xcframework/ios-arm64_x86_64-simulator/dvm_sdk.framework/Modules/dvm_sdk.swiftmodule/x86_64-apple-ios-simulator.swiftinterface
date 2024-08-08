@@ -6,6 +6,7 @@ import Combine
 import CoreLocation
 import Foundation
 import Swift
+import UIKit.UIDevice
 import UIKit
 import WebKit
 import _Concurrency
@@ -98,17 +99,20 @@ public struct DistributionContext : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-public typealias PublicationsListCompletion = (dvm_sdk.PublicationsList, (any Swift.Error)?) -> Swift.Void
+public typealias PublicationsListCompletion = (dvm_sdk.PublicationsList) -> Swift.Void
 @_hasMissingDesignatedInitializers public class DVMSDK {
   public static func initialize(clientToken: Swift.String, userId: Swift.String?)
   public static func updateUserId(_ userId: Swift.String)
-  public static func fetchPublicationsList(merchantId: Swift.String, storeCode: Swift.String, resultsCount: Swift.Int = 10, pageToken: Swift.String? = nil, completion: (dvm_sdk.PublicationsList, (any Swift.Error)?) -> Swift.Void)
+  public static func fetchPublicationsList(merchantId: Swift.String, storeCode: Swift.String, resultsCount: Swift.Int = 10, pageToken: Swift.String? = nil, completion: @escaping dvm_sdk.PublicationsListCompletion) throws
+  #if compiler(>=5.3) && $AsyncAwait
+  public static func fetchPublicationsList(merchantId: Swift.String, storeCode: Swift.String, resultsCount: Swift.Int = 10, pageToken: Swift.String? = nil) async throws -> dvm_sdk.PublicationsList
+  #endif
   public static func createRenderingView(publicationId: Swift.String, merchantId: Swift.String, storeCode: Swift.String, renderMode: dvm_sdk.RenderMode) throws -> dvm_sdk.DVMRendererView
   @objc deinit
 }
-public struct PublicationsList {
+public struct PublicationsList : Swift.Decodable {
   public let publications: [dvm_sdk.Publication]
-  public let nextPageToken: Swift.String
+  public init(from decoder: any Swift.Decoder) throws
 }
 @objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class DVMRendererView : UIKit.UIView {
   @_Concurrency.MainActor(unsafe) weak public var rendererDelegate: (any dvm_sdk.DVMRendererDelegate)?
@@ -141,40 +145,35 @@ public struct Dates : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-public struct Publication : Swift.Codable {
-  public let globalID: Swift.String
-  public let core: dvm_sdk.Core
+public struct PublicationsResponse : Swift.Codable {
+  public let publications: [dvm_sdk.Publication]
+  public let total: Swift.Int
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-public struct Core : Swift.Codable {
-  public let details: dvm_sdk.Details
-  public let language: Swift.String
+public struct Publication : Swift.Codable {
+  public let globalID: Swift.String
   public let merchantID: Swift.Int
   public let dates: dvm_sdk.Dates
-  public let source: Swift.String, state: Swift.String
-  public let legacyIDS: dvm_sdk.LegacyIDS
+  public let details: dvm_sdk.Details
+  public let language: Swift.String, source: Swift.String
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
 public struct Details : Swift.Codable {
-  public let name: Swift.String
-  public let description: Swift.String
+  public let name: Swift.String, description: Swift.String
   public let imageURL: Swift.String
-  public let additionalImages: [Swift.String]
   public let additionalInfo: dvm_sdk.AdditionalInfo
-  public let backgroundImageURL: Swift.String
-  public let backgroundColor: Swift.String
+  public let backgroundImageURL: Swift.String, backgroundColor: Swift.String
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
 public struct AdditionalInfo : Swift.Codable {
-  public let map: [Swift.String : Swift.String]
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
 public struct LegacyIDS : Swift.Codable {
-  public let flyerID: Swift.Int
+  public let flyerTypeID: Swift.Int, flyerRunID: Swift.Int, flyerID: Swift.Int
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
