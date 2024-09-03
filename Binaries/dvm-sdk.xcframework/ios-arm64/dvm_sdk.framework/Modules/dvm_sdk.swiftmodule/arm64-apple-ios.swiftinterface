@@ -5,6 +5,7 @@
 import Combine
 import CoreLocation
 import Foundation
+import OSLog
 import Swift
 import UIKit.UIDevice
 import UIKit
@@ -36,6 +37,7 @@ public struct Offer : Swift.Codable {
     public let name: Swift.String?, description: Swift.String?
     public let imageURL: Swift.String?
     public let additionalInfo: dvm_sdk.Offer.AdditionalInfo?
+    public let additionalMedia: [dvm_sdk.Offer.Media]
     public func encode(to encoder: any Swift.Encoder) throws
     public init(from decoder: any Swift.Decoder) throws
   }
@@ -49,6 +51,14 @@ public struct Offer : Swift.Codable {
     public let id1: Swift.String?, id2: Swift.String?, keywords: Swift.String?
     public let pageItemID: Swift.Int?
     public let sentAt: Swift.String?, sku: Swift.String?
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public struct Media : Swift.Codable {
+    public let type: Swift.String
+    public let url: Swift.String
+    public let altText: Swift.String
+    public let primary: Swift.Bool
     public func encode(to encoder: any Swift.Encoder) throws
     public init(from decoder: any Swift.Decoder) throws
   }
@@ -82,13 +92,14 @@ public struct OfferDetails : Swift.Codable {
   public init(from decoder: any Swift.Decoder) throws
 }
 public struct OfferDetailsEn : Swift.Codable {
-  public let saleStory: Swift.String?, postPriceText: Swift.String?, prePriceText: Swift.String?
+  public let saleStory: Swift.String?, postPriceText: Swift.String?, prePriceText: Swift.String?, disclaimer: Swift.String?
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
 public struct Pricing : Swift.Codable {
   public let offerType: Swift.String?
   public let price: Swift.Double?
+  public let salePrice: Swift.Double?
   public let percentOff: Swift.Int?
   public let conditionType: Swift.String?, purchaseMethod: Swift.String?
   public let originalPriceEach: Swift.Bool?
@@ -103,11 +114,11 @@ public typealias PublicationsListCompletion = (dvm_sdk.PublicationsList) -> Swif
 @_hasMissingDesignatedInitializers public class DVMSDK {
   public static func initialize(clientToken: Swift.String, userId: Swift.String?)
   public static func updateUserId(_ userId: Swift.String)
-  public static func fetchPublicationsList(merchantId: Swift.String, storeCode: Swift.String, resultsCount: Swift.Int = 10, pageToken: Swift.String? = nil, completion: @escaping dvm_sdk.PublicationsListCompletion) throws
+  public static func fetchPublicationsList(merchantId: Swift.String, storeCode: Swift.String, language: Swift.String, resultsCount: Swift.Int = 10, pageToken: Swift.String? = nil, completion: @escaping dvm_sdk.PublicationsListCompletion) throws
   #if compiler(>=5.3) && $AsyncAwait
-  public static func fetchPublicationsList(merchantId: Swift.String, storeCode: Swift.String, resultsCount: Swift.Int = 10, pageToken: Swift.String? = nil) async throws -> dvm_sdk.PublicationsList
+  public static func fetchPublicationsList(merchantId: Swift.String, storeCode: Swift.String, language: Swift.String?, resultsCount: Swift.Int = 10, pageToken: Swift.String? = nil) async throws -> dvm_sdk.PublicationsList
   #endif
-  public static func createRenderingView(publicationId: Swift.String, merchantId: Swift.String, storeCode: Swift.String, renderMode: dvm_sdk.RenderMode) throws -> dvm_sdk.DVMRendererView
+  public static func createRenderingView(publicationId: Swift.String, merchantId: Swift.String, storeCode: Swift.String, renderMode: dvm_sdk.RenderMode, shouldPersistWebsiteDataToDisk: Swift.Bool = false) throws -> dvm_sdk.DVMRendererView
   @objc deinit
 }
 public struct PublicationsList : Swift.Decodable {
@@ -123,8 +134,26 @@ extension dvm_sdk.DVMRendererView : WebKit.WKNavigationDelegate {
   @_Concurrency.MainActor(unsafe) @objc dynamic public func webView(_ webView: WebKit.WKWebView, didFail navigation: WebKit.WKNavigation!, withError error: any Swift.Error)
   @_Concurrency.MainActor(unsafe) @objc dynamic public func webView(_ webView: WebKit.WKWebView, didFailProvisionalNavigation navigation: WebKit.WKNavigation!, withError error: any Swift.Error)
 }
+extension dvm_sdk.DVMRendererView : UIKit.UIScrollViewDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func scrollViewDidEndDecelerating(_ scrollView: UIKit.UIScrollView)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func scrollViewDidEndDragging(_ scrollView: UIKit.UIScrollView, willDecelerate decelerate: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func scrollViewDidZoom(_ scrollView: UIKit.UIScrollView)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func scrollViewDidEndZooming(_ scrollView: UIKit.UIScrollView, with view: UIKit.UIView?, atScale scale: CoreFoundation.CGFloat)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func scrollViewDidScrollToTop(_ scrollView: UIKit.UIScrollView)
+}
+public enum DVMSDKError : Foundation.LocalizedError {
+  case sdkNotIntialized
+  case internalNetworkError(underlyingError: any Swift.Error)
+  case renderURLError(detail: Swift.String)
+  case offerDetailsError(detail: Swift.String)
+  case internalNetworkErrorBadRequestComponents
+  case internalNetworkErrorBadBaseURL
+  public var errorDescription: Swift.String? {
+    get
+  }
+}
 public protocol DVMRendererDelegate : AnyObject {
-  func didTap(item: dvm_sdk.Offer)
+  func didTap(result: Swift.Result<dvm_sdk.Offer, dvm_sdk.DVMSDKError>)
   func didFinishLoad()
   func didFailToLoad(error: any Swift.Error)
 }

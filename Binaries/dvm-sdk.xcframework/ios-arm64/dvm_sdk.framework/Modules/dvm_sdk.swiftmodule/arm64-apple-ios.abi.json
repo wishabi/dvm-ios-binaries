@@ -1143,6 +1143,66 @@
                 ]
               },
               {
+                "kind": "Var",
+                "name": "additionalMedia",
+                "printedName": "additionalMedia",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[dvm_sdk.Offer.Media]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Media",
+                        "printedName": "dvm_sdk.Offer.Media",
+                        "usr": "s:7dvm_sdk5OfferV5MediaV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:7dvm_sdk5OfferV9DetailsEnV15additionalMediaSayAC0G0VGvp",
+                "mangledName": "$s7dvm_sdk5OfferV9DetailsEnV15additionalMediaSayAC0G0VGvp",
+                "moduleName": "dvm_sdk",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[dvm_sdk.Offer.Media]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Media",
+                            "printedName": "dvm_sdk.Offer.Media",
+                            "usr": "s:7dvm_sdk5OfferV5MediaV"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:7dvm_sdk5OfferV9DetailsEnV15additionalMediaSayAC0G0VGvg",
+                    "mangledName": "$s7dvm_sdk5OfferV9DetailsEnV15additionalMediaSayAC0G0VGvg",
+                    "moduleName": "dvm_sdk",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
                 "kind": "Constructor",
                 "name": "init",
                 "printedName": "init(from:)",
@@ -1901,6 +1961,264 @@
             "declKind": "Struct",
             "usr": "s:7dvm_sdk5OfferV14AdditionalInfoV",
             "mangledName": "$s7dvm_sdk5OfferV14AdditionalInfoV",
+            "moduleName": "dvm_sdk",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Decodable",
+                "printedName": "Decodable",
+                "usr": "s:Se",
+                "mangledName": "$sSe"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Encodable",
+                "printedName": "Encodable",
+                "usr": "s:SE",
+                "mangledName": "$sSE"
+              }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "Media",
+            "printedName": "Media",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "type",
+                "printedName": "type",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:7dvm_sdk5OfferV5MediaV4typeSSvp",
+                "mangledName": "$s7dvm_sdk5OfferV5MediaV4typeSSvp",
+                "moduleName": "dvm_sdk",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:7dvm_sdk5OfferV5MediaV4typeSSvg",
+                    "mangledName": "$s7dvm_sdk5OfferV5MediaV4typeSSvg",
+                    "moduleName": "dvm_sdk",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "url",
+                "printedName": "url",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:7dvm_sdk5OfferV5MediaV3urlSSvp",
+                "mangledName": "$s7dvm_sdk5OfferV5MediaV3urlSSvp",
+                "moduleName": "dvm_sdk",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:7dvm_sdk5OfferV5MediaV3urlSSvg",
+                    "mangledName": "$s7dvm_sdk5OfferV5MediaV3urlSSvg",
+                    "moduleName": "dvm_sdk",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "altText",
+                "printedName": "altText",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:7dvm_sdk5OfferV5MediaV7altTextSSvp",
+                "mangledName": "$s7dvm_sdk5OfferV5MediaV7altTextSSvp",
+                "moduleName": "dvm_sdk",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:7dvm_sdk5OfferV5MediaV7altTextSSvg",
+                    "mangledName": "$s7dvm_sdk5OfferV5MediaV7altTextSSvg",
+                    "moduleName": "dvm_sdk",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "primary",
+                "printedName": "primary",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:7dvm_sdk5OfferV5MediaV7primarySbvp",
+                "mangledName": "$s7dvm_sdk5OfferV5MediaV7primarySbvp",
+                "moduleName": "dvm_sdk",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:7dvm_sdk5OfferV5MediaV7primarySbvg",
+                    "mangledName": "$s7dvm_sdk5OfferV5MediaV7primarySbvg",
+                    "moduleName": "dvm_sdk",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(from:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Media",
+                    "printedName": "dvm_sdk.Offer.Media",
+                    "usr": "s:7dvm_sdk5OfferV5MediaV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Decoder",
+                    "printedName": "Swift.Decoder",
+                    "usr": "s:s7DecoderP"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:7dvm_sdk5OfferV5MediaV4fromAEs7Decoder_p_tKcfc",
+                "mangledName": "$s7dvm_sdk5OfferV5MediaV4fromAEs7Decoder_p_tKcfc",
+                "moduleName": "dvm_sdk",
+                "implicit": true,
+                "throwing": true,
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Function",
+                "name": "encode",
+                "printedName": "encode(to:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Encoder",
+                    "printedName": "Swift.Encoder",
+                    "usr": "s:s7EncoderP"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:7dvm_sdk5OfferV5MediaV6encode2toys7Encoder_p_tKF",
+                "mangledName": "$s7dvm_sdk5OfferV5MediaV6encode2toys7Encoder_p_tKF",
+                "moduleName": "dvm_sdk",
+                "implicit": true,
+                "throwing": true,
+                "funcSelfKind": "NonMutating"
+              }
+            ],
+            "declKind": "Struct",
+            "usr": "s:7dvm_sdk5OfferV5MediaV",
+            "mangledName": "$s7dvm_sdk5OfferV5MediaV",
             "moduleName": "dvm_sdk",
             "declAttributes": [
               "AccessControl",
@@ -3092,6 +3410,66 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "disclaimer",
+            "printedName": "disclaimer",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7dvm_sdk14OfferDetailsEnV10disclaimerSSSgvp",
+            "mangledName": "$s7dvm_sdk14OfferDetailsEnV10disclaimerSSSgvp",
+            "moduleName": "dvm_sdk",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7dvm_sdk14OfferDetailsEnV10disclaimerSSSgvg",
+                "mangledName": "$s7dvm_sdk14OfferDetailsEnV10disclaimerSSSgvg",
+                "moduleName": "dvm_sdk",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(from:)",
@@ -3287,6 +3665,66 @@
                 "declKind": "Accessor",
                 "usr": "s:7dvm_sdk7PricingV5priceSdSgvg",
                 "mangledName": "$s7dvm_sdk7PricingV5priceSdSgvg",
+                "moduleName": "dvm_sdk",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "salePrice",
+            "printedName": "salePrice",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Double?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7dvm_sdk7PricingV9salePriceSdSgvp",
+            "mangledName": "$s7dvm_sdk7PricingV9salePriceSdSgvp",
+            "moduleName": "dvm_sdk",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Double?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7dvm_sdk7PricingV9salePriceSdSgvg",
+                "mangledName": "$s7dvm_sdk7PricingV9salePriceSdSgvg",
                 "moduleName": "dvm_sdk",
                 "implicit": true,
                 "accessorKind": "get"
@@ -3816,12 +4254,18 @@
           {
             "kind": "Function",
             "name": "fetchPublicationsList",
-            "printedName": "fetchPublicationsList(merchantId:storeCode:resultsCount:pageToken:completion:)",
+            "printedName": "fetchPublicationsList(merchantId:storeCode:language:resultsCount:pageToken:completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Void",
                 "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               },
               {
                 "kind": "TypeNominal",
@@ -3877,8 +4321,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:7dvm_sdk6DVMSDKC21fetchPublicationsList10merchantId9storeCode12resultsCount9pageToken10completionySS_SSSiSSSgyAA0eF0VctKFZ",
-            "mangledName": "$s7dvm_sdk6DVMSDKC21fetchPublicationsList10merchantId9storeCode12resultsCount9pageToken10completionySS_SSSiSSSgyAA0eF0VctKFZ",
+            "usr": "s:7dvm_sdk6DVMSDKC21fetchPublicationsList10merchantId9storeCode8language12resultsCount9pageToken10completionySS_S2SSiSSSgyAA0eF0VctKFZ",
+            "mangledName": "$s7dvm_sdk6DVMSDKC21fetchPublicationsList10merchantId9storeCode8language12resultsCount9pageToken10completionySS_S2SSiSSSgyAA0eF0VctKFZ",
             "moduleName": "dvm_sdk",
             "static": true,
             "declAttributes": [
@@ -3892,7 +4336,7 @@
           {
             "kind": "Function",
             "name": "fetchPublicationsList",
-            "printedName": "fetchPublicationsList(merchantId:storeCode:resultsCount:pageToken:)",
+            "printedName": "fetchPublicationsList(merchantId:storeCode:language:resultsCount:pageToken:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -3911,6 +4355,20 @@
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
@@ -3936,8 +4394,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:7dvm_sdk6DVMSDKC21fetchPublicationsList10merchantId9storeCode12resultsCount9pageTokenAA0eF0VSS_SSSiSSSgtYaKFZ",
-            "mangledName": "$s7dvm_sdk6DVMSDKC21fetchPublicationsList10merchantId9storeCode12resultsCount9pageTokenAA0eF0VSS_SSSiSSSgtYaKFZ",
+            "usr": "s:7dvm_sdk6DVMSDKC21fetchPublicationsList10merchantId9storeCode8language12resultsCount9pageTokenAA0eF0VSS_S2SSgSiALtYaKFZ",
+            "mangledName": "$s7dvm_sdk6DVMSDKC21fetchPublicationsList10merchantId9storeCode8language12resultsCount9pageTokenAA0eF0VSS_S2SSgSiALtYaKFZ",
             "moduleName": "dvm_sdk",
             "static": true,
             "declAttributes": [
@@ -3951,7 +4409,7 @@
           {
             "kind": "Function",
             "name": "createRenderingView",
-            "printedName": "createRenderingView(publicationId:merchantId:storeCode:renderMode:)",
+            "printedName": "createRenderingView(publicationId:merchantId:storeCode:renderMode:shouldPersistWebsiteDataToDisk:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -3982,11 +4440,18 @@
                 "name": "RenderMode",
                 "printedName": "dvm_sdk.RenderMode",
                 "usr": "s:7dvm_sdk10RenderModeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
               }
             ],
             "declKind": "Func",
-            "usr": "s:7dvm_sdk6DVMSDKC19createRenderingView13publicationId08merchantH09storeCode10renderModeAA011DVMRendererF0CSS_S2SAA06RenderM0OtKFZ",
-            "mangledName": "$s7dvm_sdk6DVMSDKC19createRenderingView13publicationId08merchantH09storeCode10renderModeAA011DVMRendererF0CSS_S2SAA06RenderM0OtKFZ",
+            "usr": "s:7dvm_sdk6DVMSDKC19createRenderingView13publicationId08merchantH09storeCode10renderMode30shouldPersistWebsiteDataToDiskAA011DVMRendererF0CSS_S2SAA06RenderM0OSbtKFZ",
+            "mangledName": "$s7dvm_sdk6DVMSDKC19createRenderingView13publicationId08merchantH09storeCode10renderMode30shouldPersistWebsiteDataToDiskAA011DVMRendererF0CSS_S2SAA06RenderM0OSbtKFZ",
             "moduleName": "dvm_sdk",
             "static": true,
             "declAttributes": [
@@ -4037,6 +4502,16 @@
         "printedName": "os",
         "declKind": "Import",
         "moduleName": "dvm_sdk"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "dvm_sdk",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       },
       {
         "kind": "Import",
@@ -4181,6 +4656,16 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "dvm_sdk",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Combine",
         "printedName": "Combine",
         "declKind": "Import",
@@ -4193,6 +4678,13 @@
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "dvm_sdk"
+      },
+      {
+        "kind": "Import",
+        "name": "OSLog",
+        "printedName": "OSLog",
         "declKind": "Import",
         "moduleName": "dvm_sdk"
       },
@@ -4499,6 +4991,187 @@
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "scrollViewDidEndDecelerating",
+            "printedName": "scrollViewDidEndDecelerating(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIScrollView",
+                "printedName": "UIKit.UIScrollView",
+                "usr": "c:objc(cs)UIScrollView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@dvm_sdk@objc(cs)DVMRendererView(im)scrollViewDidEndDecelerating:",
+            "mangledName": "$s7dvm_sdk15DVMRendererViewC06scrollD18DidEndDeceleratingyySo08UIScrollD0CF",
+            "moduleName": "dvm_sdk",
+            "objc_name": "scrollViewDidEndDecelerating:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "scrollViewDidEndDragging",
+            "printedName": "scrollViewDidEndDragging(_:willDecelerate:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIScrollView",
+                "printedName": "UIKit.UIScrollView",
+                "usr": "c:objc(cs)UIScrollView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@dvm_sdk@objc(cs)DVMRendererView(im)scrollViewDidEndDragging:willDecelerate:",
+            "mangledName": "$s7dvm_sdk15DVMRendererViewC06scrollD14DidEndDragging_14willDecelerateySo08UIScrollD0C_SbtF",
+            "moduleName": "dvm_sdk",
+            "objc_name": "scrollViewDidEndDragging:willDecelerate:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "scrollViewDidZoom",
+            "printedName": "scrollViewDidZoom(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIScrollView",
+                "printedName": "UIKit.UIScrollView",
+                "usr": "c:objc(cs)UIScrollView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@dvm_sdk@objc(cs)DVMRendererView(im)scrollViewDidZoom:",
+            "mangledName": "$s7dvm_sdk15DVMRendererViewC06scrollD7DidZoomyySo08UIScrollD0CF",
+            "moduleName": "dvm_sdk",
+            "objc_name": "scrollViewDidZoom:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "scrollViewDidEndZooming",
+            "printedName": "scrollViewDidEndZooming(_:with:atScale:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIScrollView",
+                "printedName": "UIKit.UIScrollView",
+                "usr": "c:objc(cs)UIScrollView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIView?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIView",
+                    "printedName": "UIKit.UIView",
+                    "usr": "c:objc(cs)UIView"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@dvm_sdk@objc(cs)DVMRendererView(im)scrollViewDidEndZooming:withView:atScale:",
+            "mangledName": "$s7dvm_sdk15DVMRendererViewC06scrollD13DidEndZooming_4with7atScaleySo08UIScrollD0C_So6UIViewCSg12CoreGraphics7CGFloatVtF",
+            "moduleName": "dvm_sdk",
+            "objc_name": "scrollViewDidEndZooming:withView:atScale:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "scrollViewDidScrollToTop",
+            "printedName": "scrollViewDidScrollToTop(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIScrollView",
+                "printedName": "UIKit.UIScrollView",
+                "usr": "c:objc(cs)UIScrollView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@dvm_sdk@objc(cs)DVMRendererView(im)scrollViewDidScrollToTop:",
+            "mangledName": "$s7dvm_sdk15DVMRendererViewC06scrollD14DidScrollToTopyySo08UIScrollD0CF",
+            "moduleName": "dvm_sdk",
+            "objc_name": "scrollViewDidScrollToTop:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -4606,13 +5279,427 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "DVMSDKError",
+        "printedName": "DVMSDKError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "sdkNotIntialized",
+            "printedName": "sdkNotIntialized",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(dvm_sdk.DVMSDKError.Type) -> dvm_sdk.DVMSDKError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DVMSDKError",
+                    "printedName": "dvm_sdk.DVMSDKError",
+                    "usr": "s:7dvm_sdk11DVMSDKErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "dvm_sdk.DVMSDKError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DVMSDKError",
+                        "printedName": "dvm_sdk.DVMSDKError",
+                        "usr": "s:7dvm_sdk11DVMSDKErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7dvm_sdk11DVMSDKErrorO0B13NotIntializedyA2CmF",
+            "mangledName": "$s7dvm_sdk11DVMSDKErrorO0B13NotIntializedyA2CmF",
+            "moduleName": "dvm_sdk",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "internalNetworkError",
+            "printedName": "internalNetworkError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(dvm_sdk.DVMSDKError.Type) -> (Swift.Error) -> dvm_sdk.DVMSDKError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Error) -> dvm_sdk.DVMSDKError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DVMSDKError",
+                        "printedName": "dvm_sdk.DVMSDKError",
+                        "usr": "s:7dvm_sdk11DVMSDKErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(underlyingError: Swift.Error)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "dvm_sdk.DVMSDKError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DVMSDKError",
+                        "printedName": "dvm_sdk.DVMSDKError",
+                        "usr": "s:7dvm_sdk11DVMSDKErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7dvm_sdk11DVMSDKErrorO20internalNetworkErroryACs0F0_p_tcACmF",
+            "mangledName": "$s7dvm_sdk11DVMSDKErrorO20internalNetworkErroryACs0F0_p_tcACmF",
+            "moduleName": "dvm_sdk",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "renderURLError",
+            "printedName": "renderURLError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(dvm_sdk.DVMSDKError.Type) -> (Swift.String) -> dvm_sdk.DVMSDKError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> dvm_sdk.DVMSDKError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DVMSDKError",
+                        "printedName": "dvm_sdk.DVMSDKError",
+                        "usr": "s:7dvm_sdk11DVMSDKErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(detail: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "dvm_sdk.DVMSDKError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DVMSDKError",
+                        "printedName": "dvm_sdk.DVMSDKError",
+                        "usr": "s:7dvm_sdk11DVMSDKErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7dvm_sdk11DVMSDKErrorO14renderURLErroryACSS_tcACmF",
+            "mangledName": "$s7dvm_sdk11DVMSDKErrorO14renderURLErroryACSS_tcACmF",
+            "moduleName": "dvm_sdk",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "offerDetailsError",
+            "printedName": "offerDetailsError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(dvm_sdk.DVMSDKError.Type) -> (Swift.String) -> dvm_sdk.DVMSDKError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> dvm_sdk.DVMSDKError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DVMSDKError",
+                        "printedName": "dvm_sdk.DVMSDKError",
+                        "usr": "s:7dvm_sdk11DVMSDKErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(detail: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "dvm_sdk.DVMSDKError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DVMSDKError",
+                        "printedName": "dvm_sdk.DVMSDKError",
+                        "usr": "s:7dvm_sdk11DVMSDKErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7dvm_sdk11DVMSDKErrorO17offerDetailsErroryACSS_tcACmF",
+            "mangledName": "$s7dvm_sdk11DVMSDKErrorO17offerDetailsErroryACSS_tcACmF",
+            "moduleName": "dvm_sdk",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "internalNetworkErrorBadRequestComponents",
+            "printedName": "internalNetworkErrorBadRequestComponents",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(dvm_sdk.DVMSDKError.Type) -> dvm_sdk.DVMSDKError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DVMSDKError",
+                    "printedName": "dvm_sdk.DVMSDKError",
+                    "usr": "s:7dvm_sdk11DVMSDKErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "dvm_sdk.DVMSDKError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DVMSDKError",
+                        "printedName": "dvm_sdk.DVMSDKError",
+                        "usr": "s:7dvm_sdk11DVMSDKErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7dvm_sdk11DVMSDKErrorO40internalNetworkErrorBadRequestComponentsyA2CmF",
+            "mangledName": "$s7dvm_sdk11DVMSDKErrorO40internalNetworkErrorBadRequestComponentsyA2CmF",
+            "moduleName": "dvm_sdk",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "internalNetworkErrorBadBaseURL",
+            "printedName": "internalNetworkErrorBadBaseURL",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(dvm_sdk.DVMSDKError.Type) -> dvm_sdk.DVMSDKError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DVMSDKError",
+                    "printedName": "dvm_sdk.DVMSDKError",
+                    "usr": "s:7dvm_sdk11DVMSDKErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "dvm_sdk.DVMSDKError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DVMSDKError",
+                        "printedName": "dvm_sdk.DVMSDKError",
+                        "usr": "s:7dvm_sdk11DVMSDKErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7dvm_sdk11DVMSDKErrorO30internalNetworkErrorBadBaseURLyA2CmF",
+            "mangledName": "$s7dvm_sdk11DVMSDKErrorO30internalNetworkErrorBadBaseURLyA2CmF",
+            "moduleName": "dvm_sdk",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "errorDescription",
+            "printedName": "errorDescription",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7dvm_sdk11DVMSDKErrorO16errorDescriptionSSSgvp",
+            "mangledName": "$s7dvm_sdk11DVMSDKErrorO16errorDescriptionSSSgvp",
+            "moduleName": "dvm_sdk",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7dvm_sdk11DVMSDKErrorO16errorDescriptionSSSgvg",
+                "mangledName": "$s7dvm_sdk11DVMSDKErrorO16errorDescriptionSSSgvg",
+                "moduleName": "dvm_sdk",
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:7dvm_sdk11DVMSDKErrorO",
+        "mangledName": "$s7dvm_sdk11DVMSDKErrorO",
+        "moduleName": "dvm_sdk",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "LocalizedError",
+            "printedName": "LocalizedError",
+            "usr": "s:10Foundation14LocalizedErrorP",
+            "mangledName": "$s10Foundation14LocalizedErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "dvm_sdk",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "dvm_sdk",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "DVMRendererDelegate",
         "printedName": "DVMRendererDelegate",
         "children": [
           {
             "kind": "Function",
             "name": "didTap",
-            "printedName": "didTap(item:)",
+            "printedName": "didTap(result:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -4621,14 +5708,28 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "Offer",
-                "printedName": "dvm_sdk.Offer",
-                "usr": "s:7dvm_sdk5OfferV"
+                "name": "Result",
+                "printedName": "Swift.Result<dvm_sdk.Offer, dvm_sdk.DVMSDKError>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Offer",
+                    "printedName": "dvm_sdk.Offer",
+                    "usr": "s:7dvm_sdk5OfferV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DVMSDKError",
+                    "printedName": "dvm_sdk.DVMSDKError",
+                    "usr": "s:7dvm_sdk11DVMSDKErrorO"
+                  }
+                ],
+                "usr": "s:s6ResultO"
               }
             ],
             "declKind": "Func",
-            "usr": "s:7dvm_sdk19DVMRendererDelegateP6didTap4itemyAA5OfferV_tF",
-            "mangledName": "$s7dvm_sdk19DVMRendererDelegateP6didTap4itemyAA5OfferV_tF",
+            "usr": "s:7dvm_sdk19DVMRendererDelegateP6didTap6resultys6ResultOyAA5OfferVAA11DVMSDKErrorOG_tF",
+            "mangledName": "$s7dvm_sdk19DVMRendererDelegateP6didTap6resultys6ResultOyAA5OfferVAA11DVMSDKErrorOG_tF",
             "moduleName": "dvm_sdk",
             "genericSig": "<τ_0_0 where τ_0_0 : dvm_sdk.DVMRendererDelegate>",
             "sugared_genericSig": "<Self where Self : dvm_sdk.DVMRendererDelegate>",
@@ -4944,6 +6045,23 @@
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "dvm_sdk",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "OSLog",
+        "printedName": "OSLog",
+        "declKind": "Import",
+        "moduleName": "dvm_sdk"
       },
       {
         "kind": "Import",
@@ -6482,765 +7600,940 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Offer.swift",
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Offer.swift",
       "kind": "StringLiteral",
       "offset": 647,
       "length": 10,
       "value": "\"globalId\""
     },
     {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Offer.swift",
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Offer.swift",
       "kind": "StringLiteral",
       "offset": 680,
       "length": 12,
       "value": "\"merchantId\""
     },
     {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Offer.swift",
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Offer.swift",
       "kind": "StringLiteral",
       "offset": 715,
       "length": 12,
       "value": "\"productIds\""
     },
     {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Offer.swift",
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Offer.swift",
       "kind": "StringLiteral",
       "offset": 910,
       "length": 11,
       "value": "\"legacyIds\""
     },
     {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Offer.swift",
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Offer.swift",
       "kind": "StringLiteral",
       "offset": 647,
       "length": 10,
       "value": "\"globalId\""
     },
     {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Offer.swift",
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Offer.swift",
       "kind": "StringLiteral",
       "offset": 680,
       "length": 12,
       "value": "\"merchantId\""
     },
     {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Offer.swift",
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Offer.swift",
       "kind": "StringLiteral",
       "offset": 715,
       "length": 12,
       "value": "\"productIds\""
     },
     {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Offer.swift",
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Offer.swift",
       "kind": "StringLiteral",
       "offset": 910,
       "length": 11,
       "value": "\"legacyIds\""
     },
     {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Offer.swift",
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Offer.swift",
       "kind": "StringLiteral",
-      "offset": 1299,
+      "offset": 1345,
       "length": 10,
       "value": "\"imageUrl\""
     },
     {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Offer.swift",
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Offer.swift",
       "kind": "StringLiteral",
-      "offset": 1299,
+      "offset": 1345,
       "length": 10,
       "value": "\"imageUrl\""
     },
     {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Offer.swift",
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Offer.swift",
       "kind": "StringLiteral",
-      "offset": 1745,
+      "offset": 1818,
       "length": 14,
       "value": "\"flyer_run_id\""
     },
     {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Offer.swift",
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Offer.swift",
       "kind": "StringLiteral",
-      "offset": 1797,
+      "offset": 1870,
       "length": 30,
       "value": "\"flyer_run_page_diff_group_id\""
     },
     {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Offer.swift",
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Offer.swift",
       "kind": "StringLiteral",
-      "offset": 1845,
+      "offset": 1918,
       "length": 6,
       "value": "\"id_1\""
     },
     {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Offer.swift",
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Offer.swift",
       "kind": "StringLiteral",
-      "offset": 1869,
+      "offset": 1942,
       "length": 6,
       "value": "\"id_2\""
     },
     {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Offer.swift",
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Offer.swift",
       "kind": "StringLiteral",
-      "offset": 1920,
+      "offset": 1993,
       "length": 14,
       "value": "\"page_item_id\""
     },
     {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Offer.swift",
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Offer.swift",
       "kind": "StringLiteral",
-      "offset": 1955,
+      "offset": 2028,
       "length": 9,
       "value": "\"sent_at\""
     },
     {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Offer.swift",
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Offer.swift",
       "kind": "StringLiteral",
-      "offset": 1745,
+      "offset": 1818,
       "length": 14,
       "value": "\"flyer_run_id\""
     },
     {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Offer.swift",
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Offer.swift",
       "kind": "StringLiteral",
-      "offset": 1797,
+      "offset": 1870,
       "length": 30,
       "value": "\"flyer_run_page_diff_group_id\""
     },
     {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Offer.swift",
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Offer.swift",
       "kind": "StringLiteral",
-      "offset": 1845,
+      "offset": 1918,
       "length": 6,
       "value": "\"id_1\""
     },
     {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Offer.swift",
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Offer.swift",
       "kind": "StringLiteral",
-      "offset": 1869,
+      "offset": 1942,
       "length": 6,
       "value": "\"id_2\""
     },
     {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Offer.swift",
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Offer.swift",
       "kind": "StringLiteral",
-      "offset": 1920,
+      "offset": 1993,
       "length": 14,
       "value": "\"page_item_id\""
     },
     {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Offer.swift",
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Offer.swift",
       "kind": "StringLiteral",
-      "offset": 1955,
+      "offset": 2028,
       "length": 9,
       "value": "\"sent_at\""
     },
     {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Offer.swift",
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Offer.swift",
       "kind": "StringLiteral",
-      "offset": 2395,
+      "offset": 2640,
       "length": 16,
       "value": "\"flyerItemIdMap\""
     },
     {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Offer.swift",
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Offer.swift",
       "kind": "StringLiteral",
-      "offset": 2435,
+      "offset": 2680,
       "length": 13,
       "value": "\"flyerTypeId\""
     },
     {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Offer.swift",
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Offer.swift",
       "kind": "StringLiteral",
-      "offset": 2395,
+      "offset": 2640,
       "length": 16,
       "value": "\"flyerItemIdMap\""
     },
     {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Offer.swift",
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Offer.swift",
       "kind": "StringLiteral",
-      "offset": 2435,
+      "offset": 2680,
       "length": 13,
       "value": "\"flyerTypeId\""
     },
     {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Offer.swift",
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Offer.swift",
       "kind": "StringLiteral",
-      "offset": 2597,
+      "offset": 2842,
       "length": 8,
       "value": "\"ttmUrl\""
     },
     {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Offer.swift",
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Offer.swift",
       "kind": "StringLiteral",
-      "offset": 2597,
+      "offset": 2842,
       "length": 8,
       "value": "\"ttmUrl\""
     },
     {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/Private\/JS Bridge\/Messages\/BridgeMessage.swift",
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Private\/JS Bridge\/Messages\/BridgeMessage.swift",
       "kind": "StringLiteral",
-      "offset": 1593,
+      "offset": 1758,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/DVMSDK.swift",
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/DVMSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 1689,
+      "offset": 1834,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/DVMSDK.swift",
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/DVMSDK.swift",
       "kind": "IntegerLiteral",
-      "offset": 2740,
+      "offset": 3020,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/Private\/JS Bridge\/BridgeMessageHandler.swift",
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/DVMSDK.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4339,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/DVMSDK.swift",
       "kind": "StringLiteral",
-      "offset": 938,
+      "offset": 4955,
+      "length": 20,
+      "value": "\"BuildConfiguration\""
+    },
+    {
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/DVMSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 4991,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/DVMSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 6679,
+      "length": 28,
+      "value": "\"CFBundleShortVersionString\""
+    },
+    {
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Private\/JS Bridge\/BridgeMessageHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 1010,
       "length": 66,
       "value": "\"    window.handleMessageFromNative(\""
     },
     {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/Private\/JS Bridge\/BridgeMessageHandler.swift",
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Private\/JS Bridge\/BridgeMessageHandler.swift",
       "kind": "StringLiteral",
-      "offset": 992,
+      "offset": 1064,
       "length": 1,
       "value": "\");\""
     },
     {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/Private\/JS Bridge\/BridgeMessageHandler.swift",
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Private\/JS Bridge\/BridgeMessageHandler.swift",
       "kind": "StringLiteral",
-      "offset": 1098,
-      "length": 65,
+      "offset": 1248,
+      "length": 103,
       "value": "\"Could not send message to bridge:\""
     },
     {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/Private\/JS Bridge\/BridgeMessageHandler.swift",
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Private\/JS Bridge\/BridgeMessageHandler.swift",
       "kind": "StringLiteral",
-      "offset": 1162,
-      "length": 2,
+      "offset": 1341,
+      "length": 966,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/Private\/JS Bridge\/BridgeMessageHandler.swift",
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Private\/JS Bridge\/BridgeMessageHandler.swift",
       "kind": "StringLiteral",
       "offset": 114,
       "length": 20,
       "value": "\"dvm_sdk.BridgeMessageHandler\""
     },
     {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/Private\/JS Bridge\/BridgeMessageHandler.swift",
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Private\/JS Bridge\/BridgeMessageHandler.swift",
       "kind": "StringLiteral",
-      "offset": 1583,
-      "length": 25,
-      "value": "\"JS message missing body\""
+      "offset": 1888,
+      "length": 38,
+      "value": "\"Error: \""
     },
     {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/Private\/BridgeDelegateHolder.swift",
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Private\/JS Bridge\/BridgeMessageHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 1925,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Private\/JS Bridge\/BridgeMessageHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 1967,
+      "length": 73,
+      "value": "\"Received JS message: \""
+    },
+    {
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Private\/JS Bridge\/BridgeMessageHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 2039,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Private\/JS Bridge\/BridgeMessageHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 2267,
+      "length": 34,
+      "value": "\"Could not decode JS message body\""
+    },
+    {
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Private\/BridgeDelegateHolder.swift",
       "kind": "StringLiteral",
       "offset": 71,
       "length": 20,
       "value": "\"dvm_sdk.BridgeDelegateHolder\""
     },
     {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/Public\/DVMRenderer.swift",
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/DVMRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 660,
+      "offset": 821,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/Public\/DVMRenderer.swift",
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/DVMRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 674,
+      "offset": 835,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/Public\/DVMRenderer.swift",
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/DVMRenderer.swift",
       "kind": "BooleanLiteral",
-      "offset": 2026,
+      "offset": 1134,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/Public\/DVMRenderer.swift",
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/DVMRenderer.swift",
       "kind": "BooleanLiteral",
-      "offset": 2128,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/Public\/DVMRenderer.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2207,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/Public\/DVMRenderer.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2276,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/Public\/DVMRenderer.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2351,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/Public\/DVMRenderer.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2410,
+      "offset": 2182,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/Public\/DVMRenderer.swift",
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/DVMRenderer.swift",
       "kind": "BooleanLiteral",
-      "offset": 2472,
+      "offset": 2409,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/Public\/DVMRenderer.swift",
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/DVMRenderer.swift",
       "kind": "BooleanLiteral",
-      "offset": 2511,
+      "offset": 3058,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/Public\/DVMRenderer.swift",
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/DVMRenderer.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3160,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/DVMRenderer.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3239,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/DVMRenderer.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3308,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/DVMRenderer.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3383,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/DVMRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 2559,
+      "offset": 3430,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/Public\/DVMRenderer.swift",
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/DVMRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 2727,
+      "offset": 3744,
       "length": 3,
-      "value": "200"
+      "value": "100"
     },
     {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/Public\/DVMRenderer.swift",
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/DVMRenderer.swift",
       "kind": "BooleanLiteral",
-      "offset": 3031,
+      "offset": 5053,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/Public\/DVMRenderer.swift",
-      "kind": "FloatLiteral",
-      "offset": 3797,
-      "length": 3,
-      "value": "0.1"
-    },
-    {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/Public\/DVMRenderer.swift",
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/DVMRenderer.swift",
       "kind": "StringLiteral",
-      "offset": 5267,
+      "offset": 6449,
       "length": 39,
       "value": "\"init(coder:) has not been implemented\""
     },
     {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/Public\/DVMRenderer.swift",
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/DVMRenderer.swift",
       "kind": "StringLiteral",
-      "offset": 5719,
-      "length": 53,
+      "offset": 6611,
+      "length": 28,
+      "value": "\"CFBundleShortVersionString\""
+    },
+    {
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/DVMRenderer.swift",
+      "kind": "StringLiteral",
+      "offset": 7044,
+      "length": 26,
       "value": "\"invalid base URL(\""
     },
     {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/Public\/DVMRenderer.swift",
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/DVMRenderer.swift",
       "kind": "StringLiteral",
-      "offset": 5770,
+      "offset": 7068,
       "length": 1,
       "value": "\")\""
     },
     {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/Public\/DVMRenderer.swift",
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/DVMRenderer.swift",
       "kind": "StringLiteral",
-      "offset": 5908,
+      "offset": 7206,
       "length": 34,
       "value": "\"Could not create publication URL\""
     },
     {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/Public\/DVMRenderer.swift",
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/DVMRenderer.swift",
       "kind": "StringLiteral",
-      "offset": 209,
+      "offset": 222,
       "length": 15,
       "value": "\"dvm_sdk.DVMRendererView\""
     },
     {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/Private\/Network\/NetworkClient.swift",
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/DVMSDKError.swift",
       "kind": "StringLiteral",
-      "offset": 990,
+      "offset": 903,
+      "length": 46,
+      "value": "\"The SDK has not been initialized with a key.\""
+    },
+    {
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/DVMSDKError.swift",
+      "kind": "StringLiteral",
+      "offset": 1006,
+      "length": 67,
+      "value": "\"An internal network error occurred: \""
+    },
+    {
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/DVMSDKError.swift",
+      "kind": "StringLiteral",
+      "offset": 1072,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/DVMSDKError.swift",
+      "kind": "StringLiteral",
+      "offset": 1125,
+      "length": 30,
+      "value": "\"An error occurred: \""
+    },
+    {
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/DVMSDKError.swift",
+      "kind": "StringLiteral",
+      "offset": 1154,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/DVMSDKError.swift",
+      "kind": "StringLiteral",
+      "offset": 1221,
+      "length": 57,
+      "value": "\"One or more of the rendering URL parameters is invalid.\""
+    },
+    {
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/DVMSDKError.swift",
+      "kind": "StringLiteral",
+      "offset": 1334,
+      "length": 31,
+      "value": "\"The rendering URL is invalid.\""
+    },
+    {
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/DVMSDKError.swift",
+      "kind": "StringLiteral",
+      "offset": 1428,
+      "length": 53,
+      "value": "\"An error occurred fetching offer details: \""
+    },
+    {
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/DVMSDKError.swift",
+      "kind": "StringLiteral",
+      "offset": 1480,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Private\/Network\/NetworkClient.swift",
+      "kind": "StringLiteral",
+      "offset": 1212,
+      "length": 27,
+      "value": "\"LANGUAGE_TYPE_\""
+    },
+    {
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Private\/Network\/NetworkClient.swift",
+      "kind": "StringLiteral",
+      "offset": 1238,
+      "length": 16,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Private\/Network\/NetworkClient.swift",
+      "kind": "StringLiteral",
+      "offset": 1667,
       "length": 5,
       "value": "\"GET\""
     },
     {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/Private\/Network\/NetworkClient.swift",
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Private\/Network\/NetworkClient.swift",
       "kind": "StringLiteral",
-      "offset": 1115,
+      "offset": 1794,
       "length": 18,
       "value": "\"application\/json\""
     },
     {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/Private\/Network\/NetworkClient.swift",
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Private\/Network\/NetworkClient.swift",
       "kind": "StringLiteral",
-      "offset": 1155,
+      "offset": 1834,
       "length": 14,
       "value": "\"Content-Type\""
     },
     {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/Private\/Constants.swift",
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Private\/Environment.swift",
       "kind": "StringLiteral",
-      "offset": 192,
-      "length": 28,
-      "value": "\"USE_HOLODECK_RENDERING_URL\""
+      "offset": 205,
+      "length": 7,
+      "value": "\"Debug\""
     },
     {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/Private\/Constants.swift",
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Private\/Environment.swift",
       "kind": "StringLiteral",
-      "offset": 246,
-      "length": 55,
-      "value": "\"https:\/\/dvm-kit-web.flippback.com\/holodeck\/index.html\""
+      "offset": 231,
+      "length": 10,
+      "value": "\"Holodeck\""
     },
     {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/Private\/Constants.swift",
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Private\/Environment.swift",
       "kind": "StringLiteral",
-      "offset": 332,
+      "offset": 205,
+      "length": 7,
+      "value": "\"Debug\""
+    },
+    {
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Private\/Environment.swift",
+      "kind": "StringLiteral",
+      "offset": 231,
+      "length": 10,
+      "value": "\"Holodeck\""
+    },
+    {
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Private\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 223,
       "length": 57,
       "value": "\"https:\/\/dvm-kit-web.flippback.com\/production\/index.html\""
     },
     {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/Private\/Constants.swift",
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Private\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 438,
+      "offset": 318,
+      "length": 55,
+      "value": "\"https:\/\/dvm-kit-web.flippback.com\/holodeck\/index.html\""
+    },
+    {
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Private\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 422,
       "length": 12,
       "value": "\"sdkVersion\""
     },
     {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/Private\/Constants.swift",
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Private\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 481,
+      "offset": 465,
       "length": 10,
       "value": "\"platform\""
     },
     {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/Private\/Constants.swift",
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Private\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 525,
-      "length": 5,
-      "value": "\"0.1\""
-    },
-    {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/Private\/Constants.swift",
-      "kind": "StringLiteral",
-      "offset": 562,
+      "offset": 507,
       "length": 5,
       "value": "\"ios\""
     },
     {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/Private\/Constants.swift",
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Private\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 690,
-      "length": 31,
-      "value": "\"USE_HOLODECK_PUBLICATIONS_URL\""
-    },
-    {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/Private\/Constants.swift",
-      "kind": "StringLiteral",
-      "offset": 747,
-      "length": 63,
-      "value": "\"https:\/\/holodeck.flippback.com\/curator\/v1\/dvm\/v1\/publications\""
-    },
-    {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/Private\/Constants.swift",
-      "kind": "StringLiteral",
-      "offset": 841,
+      "offset": 667,
       "length": 51,
       "value": "\"https:\/\/dev-api.flipp.com\/curator\/v1\/publications\""
     },
     {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/Private\/Constants.swift",
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Private\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 946,
+      "offset": 756,
+      "length": 63,
+      "value": "\"https:\/\/holodeck.flippback.com\/curator\/v1\/dvm\/v1\/publications\""
+    },
+    {
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Private\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 874,
       "length": 15,
       "value": "\"Authorization\""
     },
     {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/Private\/Constants.swift",
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Private\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 990,
+      "offset": 918,
       "length": 12,
       "value": "\"merchantId\""
     },
     {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/Private\/Constants.swift",
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Private\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1030,
+      "offset": 958,
       "length": 11,
       "value": "\"storeCode\""
     },
     {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/Private\/Constants.swift",
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Private\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1068,
+      "offset": 996,
+      "length": 10,
+      "value": "\"language\""
+    },
+    {
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Private\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 1063,
+      "length": 17,
+      "value": "\"DVMSDK_defaults\""
+    },
+    {
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Private\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 1119,
+      "length": 18,
+      "value": "\"platformDeviceId\""
+    },
+    {
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Private\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 1208,
+      "length": 20,
+      "value": "\"platform-device-id\""
+    },
+    {
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Private\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 1256,
       "length": 11,
       "value": "\"DvmBridge\""
     },
     {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/Private\/Constants.swift",
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Private\/Constants.swift",
       "kind": "FloatLiteral",
-      "offset": 1109,
-      "length": 3,
-      "value": "0.1"
-    },
-    {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/Private\/Constants.swift",
-      "kind": "FloatLiteral",
-      "offset": 1143,
+      "offset": 1298,
       "length": 3,
       "value": "8.0"
     },
     {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/Private\/JS Bridge\/Messages\/MessageName.swift",
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Private\/JS Bridge\/Messages\/MessageName.swift",
       "kind": "StringLiteral",
-      "offset": 128,
+      "offset": 247,
       "length": 16,
       "value": "\"request-render\""
     },
     {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/Private\/JS Bridge\/Messages\/MessageName.swift",
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Private\/JS Bridge\/Messages\/MessageName.swift",
       "kind": "StringLiteral",
-      "offset": 163,
+      "offset": 282,
       "length": 21,
       "value": "\"experience-viewport\""
     },
     {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/Private\/JS Bridge\/Messages\/MessageName.swift",
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Private\/JS Bridge\/Messages\/MessageName.swift",
       "kind": "StringLiteral",
-      "offset": 204,
+      "offset": 323,
       "length": 12,
       "value": "\"page-ready\""
     },
     {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/Private\/JS Bridge\/Messages\/MessageName.swift",
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Private\/JS Bridge\/Messages\/MessageName.swift",
       "kind": "StringLiteral",
-      "offset": 239,
+      "offset": 358,
       "length": 15,
       "value": "\"content-ready\""
     },
     {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/Private\/JS Bridge\/Messages\/MessageName.swift",
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Private\/JS Bridge\/Messages\/MessageName.swift",
       "kind": "StringLiteral",
-      "offset": 268,
+      "offset": 387,
       "length": 13,
       "value": "\"request-tap\""
     },
     {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/Private\/JS Bridge\/Messages\/MessageName.swift",
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Private\/JS Bridge\/Messages\/MessageName.swift",
       "kind": "StringLiteral",
-      "offset": 305,
+      "offset": 426,
+      "length": 19,
+      "value": "\"request-tap-error\""
+    },
+    {
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Private\/JS Bridge\/Messages\/MessageName.swift",
+      "kind": "StringLiteral",
+      "offset": 469,
       "length": 27,
       "value": "\"request-scroll-to-section\""
     },
     {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/Private\/JS Bridge\/Messages\/MessageName.swift",
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Private\/JS Bridge\/Messages\/MessageName.swift",
       "kind": "StringLiteral",
-      "offset": 361,
+      "offset": 525,
       "length": 20,
       "value": "\"content-load-error\""
     },
     {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/Private\/JS Bridge\/Messages\/MessageName.swift",
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Private\/JS Bridge\/Messages\/MessageName.swift",
       "kind": "StringLiteral",
-      "offset": 128,
+      "offset": 247,
       "length": 16,
       "value": "\"request-render\""
     },
     {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/Private\/JS Bridge\/Messages\/MessageName.swift",
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Private\/JS Bridge\/Messages\/MessageName.swift",
       "kind": "StringLiteral",
-      "offset": 163,
+      "offset": 282,
       "length": 21,
       "value": "\"experience-viewport\""
     },
     {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/Private\/JS Bridge\/Messages\/MessageName.swift",
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Private\/JS Bridge\/Messages\/MessageName.swift",
       "kind": "StringLiteral",
-      "offset": 204,
+      "offset": 323,
       "length": 12,
       "value": "\"page-ready\""
     },
     {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/Private\/JS Bridge\/Messages\/MessageName.swift",
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Private\/JS Bridge\/Messages\/MessageName.swift",
       "kind": "StringLiteral",
-      "offset": 239,
+      "offset": 358,
       "length": 15,
       "value": "\"content-ready\""
     },
     {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/Private\/JS Bridge\/Messages\/MessageName.swift",
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Private\/JS Bridge\/Messages\/MessageName.swift",
       "kind": "StringLiteral",
-      "offset": 268,
+      "offset": 387,
       "length": 13,
       "value": "\"request-tap\""
     },
     {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/Private\/JS Bridge\/Messages\/MessageName.swift",
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Private\/JS Bridge\/Messages\/MessageName.swift",
       "kind": "StringLiteral",
-      "offset": 305,
+      "offset": 426,
+      "length": 19,
+      "value": "\"request-tap-error\""
+    },
+    {
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Private\/JS Bridge\/Messages\/MessageName.swift",
+      "kind": "StringLiteral",
+      "offset": 469,
       "length": 27,
       "value": "\"request-scroll-to-section\""
     },
     {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/Private\/JS Bridge\/Messages\/MessageName.swift",
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Private\/JS Bridge\/Messages\/MessageName.swift",
       "kind": "StringLiteral",
-      "offset": 361,
+      "offset": 525,
       "length": 20,
       "value": "\"content-load-error\""
     },
     {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Publication.swift",
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Publication.swift",
       "kind": "StringLiteral",
       "offset": 590,
       "length": 10,
       "value": "\"globalId\""
     },
     {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Publication.swift",
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Publication.swift",
       "kind": "StringLiteral",
       "offset": 627,
       "length": 12,
       "value": "\"merchantId\""
     },
     {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Publication.swift",
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Publication.swift",
       "kind": "StringLiteral",
       "offset": 590,
       "length": 10,
       "value": "\"globalId\""
     },
     {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Publication.swift",
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Publication.swift",
       "kind": "StringLiteral",
       "offset": 627,
       "length": 12,
       "value": "\"merchantId\""
     },
     {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Publication.swift",
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Publication.swift",
       "kind": "StringLiteral",
       "offset": 1185,
       "length": 10,
       "value": "\"imageUrl\""
     },
     {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Publication.swift",
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Publication.swift",
       "kind": "StringLiteral",
       "offset": 1258,
       "length": 20,
       "value": "\"backgroundImageUrl\""
     },
     {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Publication.swift",
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Publication.swift",
       "kind": "StringLiteral",
       "offset": 1185,
       "length": 10,
       "value": "\"imageUrl\""
     },
     {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Publication.swift",
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Publication.swift",
       "kind": "StringLiteral",
       "offset": 1258,
       "length": 20,
       "value": "\"backgroundImageUrl\""
     },
     {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Publication.swift",
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Publication.swift",
       "kind": "StringLiteral",
       "offset": 1564,
       "length": 13,
       "value": "\"flyerTypeId\""
     },
     {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Publication.swift",
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Publication.swift",
       "kind": "StringLiteral",
       "offset": 1604,
       "length": 12,
       "value": "\"flyerRunId\""
     },
     {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Publication.swift",
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Publication.swift",
       "kind": "StringLiteral",
       "offset": 1640,
       "length": 9,
       "value": "\"flyerId\""
     },
     {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Publication.swift",
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Publication.swift",
       "kind": "StringLiteral",
       "offset": 1564,
       "length": 13,
       "value": "\"flyerTypeId\""
     },
     {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Publication.swift",
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Publication.swift",
       "kind": "StringLiteral",
       "offset": 1604,
       "length": 12,
       "value": "\"flyerRunId\""
     },
     {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Publication.swift",
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Publication.swift",
       "kind": "StringLiteral",
       "offset": 1640,
       "length": 9,
       "value": "\"flyerId\""
     },
     {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/Private\/JS Bridge\/Messages\/Payloads\/RequestRenderPayload.swift",
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Private\/JS Bridge\/Messages\/Payloads\/RequestRenderPayload.swift",
       "kind": "StringLiteral",
-      "offset": 323,
+      "offset": 485,
       "length": 6,
       "value": "\"type\""
     },
     {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/Private\/JS Bridge\/Messages\/Payloads\/RequestRenderPayload.swift",
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Private\/JS Bridge\/Messages\/Payloads\/RequestRenderPayload.swift",
       "kind": "StringLiteral",
-      "offset": 372,
+      "offset": 534,
       "length": 13,
       "value": "\"userContext\""
     },
     {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/Private\/JS Bridge\/Messages\/Payloads\/RequestRenderPayload.swift",
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Private\/JS Bridge\/Messages\/Payloads\/RequestRenderPayload.swift",
       "kind": "StringLiteral",
-      "offset": 323,
+      "offset": 485,
       "length": 6,
       "value": "\"type\""
     },
     {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/Private\/JS Bridge\/Messages\/Payloads\/RequestRenderPayload.swift",
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Private\/JS Bridge\/Messages\/Payloads\/RequestRenderPayload.swift",
       "kind": "StringLiteral",
-      "offset": 372,
+      "offset": 534,
       "length": 13,
       "value": "\"userContext\""
     },
     {
-      "filePath": "\/Users\/matias.crespillo\/Development\/dvm-sdk-ios\/dvm-sdk\/Private\/JS Bridge\/Messages\/Payloads\/RequestRenderPayload.swift",
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Private\/JS Bridge\/Messages\/Payloads\/RequestRenderPayload.swift",
       "kind": "StringLiteral",
-      "offset": 1544,
+      "offset": 1835,
       "length": 45,
       "value": "\"Invalid number of keys found, expected one.\""
     }
