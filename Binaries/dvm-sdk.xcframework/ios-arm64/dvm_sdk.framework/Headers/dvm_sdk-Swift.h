@@ -318,6 +318,16 @@ SWIFT_CLASS("_TtC7dvm_sdk15DVMRendererView")
 - (void)webView:(WKWebView * _Nonnull)webView didFailProvisionalNavigation:(WKNavigation * _Null_unspecified)navigation withError:(NSError * _Nonnull)error;
 @end
 
+@class UIScrollView;
+
+@interface DVMRendererView (SWIFT_EXTENSION(dvm_sdk)) <UIScrollViewDelegate>
+- (void)scrollViewDidEndDecelerating:(UIScrollView * _Nonnull)scrollView;
+- (void)scrollViewDidEndDragging:(UIScrollView * _Nonnull)scrollView willDecelerate:(BOOL)decelerate;
+- (void)scrollViewDidZoom:(UIScrollView * _Nonnull)scrollView;
+- (void)scrollViewDidEndZooming:(UIScrollView * _Nonnull)scrollView withView:(UIView * _Nullable)view atScale:(CGFloat)scale;
+- (void)scrollViewDidScrollToTop:(UIScrollView * _Nonnull)scrollView;
+@end
+
 #endif
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop
