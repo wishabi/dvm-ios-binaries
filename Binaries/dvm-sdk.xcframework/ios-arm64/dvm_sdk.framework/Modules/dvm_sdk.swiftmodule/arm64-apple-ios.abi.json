@@ -762,27 +762,27 @@
             "children": [
               {
                 "kind": "Var",
-                "name": "en",
-                "printedName": "en",
+                "name": "name",
+                "printedName": "name",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "dvm_sdk.Offer.DetailsEn?",
+                    "printedName": "Swift.String?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "DetailsEn",
-                        "printedName": "dvm_sdk.Offer.DetailsEn",
-                        "usr": "s:7dvm_sdk5OfferV9DetailsEnV"
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Var",
-                "usr": "s:7dvm_sdk5OfferV7DetailsV2enAC0D2EnVSgvp",
-                "mangledName": "$s7dvm_sdk5OfferV7DetailsV2enAC0D2EnVSgvp",
+                "usr": "s:7dvm_sdk5OfferV7DetailsV4nameSSSgvp",
+                "mangledName": "$s7dvm_sdk5OfferV7DetailsV4nameSSSgvp",
                 "moduleName": "dvm_sdk",
                 "declAttributes": [
                   "HasStorage",
@@ -799,21 +799,261 @@
                       {
                         "kind": "TypeNominal",
                         "name": "Optional",
-                        "printedName": "dvm_sdk.Offer.DetailsEn?",
+                        "printedName": "Swift.String?",
                         "children": [
                           {
                             "kind": "TypeNominal",
-                            "name": "DetailsEn",
-                            "printedName": "dvm_sdk.Offer.DetailsEn",
-                            "usr": "s:7dvm_sdk5OfferV9DetailsEnV"
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
                           }
                         ],
                         "usr": "s:Sq"
                       }
                     ],
                     "declKind": "Accessor",
-                    "usr": "s:7dvm_sdk5OfferV7DetailsV2enAC0D2EnVSgvg",
-                    "mangledName": "$s7dvm_sdk5OfferV7DetailsV2enAC0D2EnVSgvg",
+                    "usr": "s:7dvm_sdk5OfferV7DetailsV4nameSSSgvg",
+                    "mangledName": "$s7dvm_sdk5OfferV7DetailsV4nameSSSgvg",
+                    "moduleName": "dvm_sdk",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "description",
+                "printedName": "description",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:7dvm_sdk5OfferV7DetailsV11descriptionSSSgvp",
+                "mangledName": "$s7dvm_sdk5OfferV7DetailsV11descriptionSSSgvp",
+                "moduleName": "dvm_sdk",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:7dvm_sdk5OfferV7DetailsV11descriptionSSSgvg",
+                    "mangledName": "$s7dvm_sdk5OfferV7DetailsV11descriptionSSSgvg",
+                    "moduleName": "dvm_sdk",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "imageURL",
+                "printedName": "imageURL",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:7dvm_sdk5OfferV7DetailsV8imageURLSSSgvp",
+                "mangledName": "$s7dvm_sdk5OfferV7DetailsV8imageURLSSSgvp",
+                "moduleName": "dvm_sdk",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:7dvm_sdk5OfferV7DetailsV8imageURLSSSgvg",
+                    "mangledName": "$s7dvm_sdk5OfferV7DetailsV8imageURLSSSgvg",
+                    "moduleName": "dvm_sdk",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "additionalInfo",
+                "printedName": "additionalInfo",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "dvm_sdk.Offer.AdditionalInfo?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AdditionalInfo",
+                        "printedName": "dvm_sdk.Offer.AdditionalInfo",
+                        "usr": "s:7dvm_sdk5OfferV14AdditionalInfoV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:7dvm_sdk5OfferV7DetailsV14additionalInfoAC010AdditionalF0VSgvp",
+                "mangledName": "$s7dvm_sdk5OfferV7DetailsV14additionalInfoAC010AdditionalF0VSgvp",
+                "moduleName": "dvm_sdk",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "dvm_sdk.Offer.AdditionalInfo?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "AdditionalInfo",
+                            "printedName": "dvm_sdk.Offer.AdditionalInfo",
+                            "usr": "s:7dvm_sdk5OfferV14AdditionalInfoV"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:7dvm_sdk5OfferV7DetailsV14additionalInfoAC010AdditionalF0VSgvg",
+                    "mangledName": "$s7dvm_sdk5OfferV7DetailsV14additionalInfoAC010AdditionalF0VSgvg",
+                    "moduleName": "dvm_sdk",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "additionalMedia",
+                "printedName": "additionalMedia",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[dvm_sdk.Offer.Media]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Media",
+                        "printedName": "dvm_sdk.Offer.Media",
+                        "usr": "s:7dvm_sdk5OfferV5MediaV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:7dvm_sdk5OfferV7DetailsV15additionalMediaSayAC0F0VGvp",
+                "mangledName": "$s7dvm_sdk5OfferV7DetailsV15additionalMediaSayAC0F0VGvp",
+                "moduleName": "dvm_sdk",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[dvm_sdk.Offer.Media]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Media",
+                            "printedName": "dvm_sdk.Offer.Media",
+                            "usr": "s:7dvm_sdk5OfferV5MediaV"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:7dvm_sdk5OfferV7DetailsV15additionalMediaSayAC0F0VGvg",
+                    "mangledName": "$s7dvm_sdk5OfferV7DetailsV15additionalMediaSayAC0F0VGvg",
                     "moduleName": "dvm_sdk",
                     "implicit": true,
                     "accessorKind": "get"
@@ -875,388 +1115,6 @@
             "declKind": "Struct",
             "usr": "s:7dvm_sdk5OfferV7DetailsV",
             "mangledName": "$s7dvm_sdk5OfferV7DetailsV",
-            "moduleName": "dvm_sdk",
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "conformances": [
-              {
-                "kind": "Conformance",
-                "name": "Decodable",
-                "printedName": "Decodable",
-                "usr": "s:Se",
-                "mangledName": "$sSe"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Encodable",
-                "printedName": "Encodable",
-                "usr": "s:SE",
-                "mangledName": "$sSE"
-              }
-            ]
-          },
-          {
-            "kind": "TypeDecl",
-            "name": "DetailsEn",
-            "printedName": "DetailsEn",
-            "children": [
-              {
-                "kind": "Var",
-                "name": "name",
-                "printedName": "name",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:7dvm_sdk5OfferV9DetailsEnV4nameSSSgvp",
-                "mangledName": "$s7dvm_sdk5OfferV9DetailsEnV4nameSSSgvp",
-                "moduleName": "dvm_sdk",
-                "declAttributes": [
-                  "HasStorage",
-                  "AccessControl"
-                ],
-                "isLet": true,
-                "hasStorage": true,
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "Swift.String?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "String",
-                            "printedName": "Swift.String",
-                            "usr": "s:SS"
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:7dvm_sdk5OfferV9DetailsEnV4nameSSSgvg",
-                    "mangledName": "$s7dvm_sdk5OfferV9DetailsEnV4nameSSSgvg",
-                    "moduleName": "dvm_sdk",
-                    "implicit": true,
-                    "accessorKind": "get"
-                  }
-                ]
-              },
-              {
-                "kind": "Var",
-                "name": "description",
-                "printedName": "description",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:7dvm_sdk5OfferV9DetailsEnV11descriptionSSSgvp",
-                "mangledName": "$s7dvm_sdk5OfferV9DetailsEnV11descriptionSSSgvp",
-                "moduleName": "dvm_sdk",
-                "declAttributes": [
-                  "HasStorage",
-                  "AccessControl"
-                ],
-                "isLet": true,
-                "hasStorage": true,
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "Swift.String?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "String",
-                            "printedName": "Swift.String",
-                            "usr": "s:SS"
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:7dvm_sdk5OfferV9DetailsEnV11descriptionSSSgvg",
-                    "mangledName": "$s7dvm_sdk5OfferV9DetailsEnV11descriptionSSSgvg",
-                    "moduleName": "dvm_sdk",
-                    "implicit": true,
-                    "accessorKind": "get"
-                  }
-                ]
-              },
-              {
-                "kind": "Var",
-                "name": "imageURL",
-                "printedName": "imageURL",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:7dvm_sdk5OfferV9DetailsEnV8imageURLSSSgvp",
-                "mangledName": "$s7dvm_sdk5OfferV9DetailsEnV8imageURLSSSgvp",
-                "moduleName": "dvm_sdk",
-                "declAttributes": [
-                  "HasStorage",
-                  "AccessControl"
-                ],
-                "isLet": true,
-                "hasStorage": true,
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "Swift.String?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "String",
-                            "printedName": "Swift.String",
-                            "usr": "s:SS"
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:7dvm_sdk5OfferV9DetailsEnV8imageURLSSSgvg",
-                    "mangledName": "$s7dvm_sdk5OfferV9DetailsEnV8imageURLSSSgvg",
-                    "moduleName": "dvm_sdk",
-                    "implicit": true,
-                    "accessorKind": "get"
-                  }
-                ]
-              },
-              {
-                "kind": "Var",
-                "name": "additionalInfo",
-                "printedName": "additionalInfo",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "dvm_sdk.Offer.AdditionalInfo?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "AdditionalInfo",
-                        "printedName": "dvm_sdk.Offer.AdditionalInfo",
-                        "usr": "s:7dvm_sdk5OfferV14AdditionalInfoV"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:7dvm_sdk5OfferV9DetailsEnV14additionalInfoAC010AdditionalG0VSgvp",
-                "mangledName": "$s7dvm_sdk5OfferV9DetailsEnV14additionalInfoAC010AdditionalG0VSgvp",
-                "moduleName": "dvm_sdk",
-                "declAttributes": [
-                  "HasStorage",
-                  "AccessControl"
-                ],
-                "isLet": true,
-                "hasStorage": true,
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "dvm_sdk.Offer.AdditionalInfo?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "AdditionalInfo",
-                            "printedName": "dvm_sdk.Offer.AdditionalInfo",
-                            "usr": "s:7dvm_sdk5OfferV14AdditionalInfoV"
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:7dvm_sdk5OfferV9DetailsEnV14additionalInfoAC010AdditionalG0VSgvg",
-                    "mangledName": "$s7dvm_sdk5OfferV9DetailsEnV14additionalInfoAC010AdditionalG0VSgvg",
-                    "moduleName": "dvm_sdk",
-                    "implicit": true,
-                    "accessorKind": "get"
-                  }
-                ]
-              },
-              {
-                "kind": "Var",
-                "name": "additionalMedia",
-                "printedName": "additionalMedia",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[dvm_sdk.Offer.Media]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Media",
-                        "printedName": "dvm_sdk.Offer.Media",
-                        "usr": "s:7dvm_sdk5OfferV5MediaV"
-                      }
-                    ],
-                    "usr": "s:Sa"
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:7dvm_sdk5OfferV9DetailsEnV15additionalMediaSayAC0G0VGvp",
-                "mangledName": "$s7dvm_sdk5OfferV9DetailsEnV15additionalMediaSayAC0G0VGvp",
-                "moduleName": "dvm_sdk",
-                "declAttributes": [
-                  "HasStorage",
-                  "AccessControl"
-                ],
-                "isLet": true,
-                "hasStorage": true,
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Array",
-                        "printedName": "[dvm_sdk.Offer.Media]",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Media",
-                            "printedName": "dvm_sdk.Offer.Media",
-                            "usr": "s:7dvm_sdk5OfferV5MediaV"
-                          }
-                        ],
-                        "usr": "s:Sa"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:7dvm_sdk5OfferV9DetailsEnV15additionalMediaSayAC0G0VGvg",
-                    "mangledName": "$s7dvm_sdk5OfferV9DetailsEnV15additionalMediaSayAC0G0VGvg",
-                    "moduleName": "dvm_sdk",
-                    "implicit": true,
-                    "accessorKind": "get"
-                  }
-                ]
-              },
-              {
-                "kind": "Constructor",
-                "name": "init",
-                "printedName": "init(from:)",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "DetailsEn",
-                    "printedName": "dvm_sdk.Offer.DetailsEn",
-                    "usr": "s:7dvm_sdk5OfferV9DetailsEnV"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Decoder",
-                    "printedName": "Swift.Decoder",
-                    "usr": "s:s7DecoderP"
-                  }
-                ],
-                "declKind": "Constructor",
-                "usr": "s:7dvm_sdk5OfferV9DetailsEnV4fromAEs7Decoder_p_tKcfc",
-                "mangledName": "$s7dvm_sdk5OfferV9DetailsEnV4fromAEs7Decoder_p_tKcfc",
-                "moduleName": "dvm_sdk",
-                "implicit": true,
-                "throwing": true,
-                "init_kind": "Designated"
-              },
-              {
-                "kind": "Function",
-                "name": "encode",
-                "printedName": "encode(to:)",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Encoder",
-                    "printedName": "Swift.Encoder",
-                    "usr": "s:s7EncoderP"
-                  }
-                ],
-                "declKind": "Func",
-                "usr": "s:7dvm_sdk5OfferV9DetailsEnV6encode2toys7Encoder_p_tKF",
-                "mangledName": "$s7dvm_sdk5OfferV9DetailsEnV6encode2toys7Encoder_p_tKF",
-                "moduleName": "dvm_sdk",
-                "implicit": true,
-                "throwing": true,
-                "funcSelfKind": "NonMutating"
-              }
-            ],
-            "declKind": "Struct",
-            "usr": "s:7dvm_sdk5OfferV9DetailsEnV",
-            "mangledName": "$s7dvm_sdk5OfferV9DetailsEnV",
             "moduleName": "dvm_sdk",
             "declAttributes": [
               "AccessControl",
@@ -3089,27 +2947,27 @@
         "children": [
           {
             "kind": "Var",
-            "name": "en",
-            "printedName": "en",
+            "name": "saleStory",
+            "printedName": "saleStory",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "dvm_sdk.OfferDetailsEn?",
+                "printedName": "Swift.String?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "OfferDetailsEn",
-                    "printedName": "dvm_sdk.OfferDetailsEn",
-                    "usr": "s:7dvm_sdk14OfferDetailsEnV"
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
                   }
                 ],
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "s:7dvm_sdk12OfferDetailsV2enAA0cD2EnVSgvp",
-            "mangledName": "$s7dvm_sdk12OfferDetailsV2enAA0cD2EnVSgvp",
+            "usr": "s:7dvm_sdk12OfferDetailsV9saleStorySSSgvp",
+            "mangledName": "$s7dvm_sdk12OfferDetailsV9saleStorySSSgvp",
             "moduleName": "dvm_sdk",
             "declAttributes": [
               "HasStorage",
@@ -3126,21 +2984,201 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "dvm_sdk.OfferDetailsEn?",
+                    "printedName": "Swift.String?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "OfferDetailsEn",
-                        "printedName": "dvm_sdk.OfferDetailsEn",
-                        "usr": "s:7dvm_sdk14OfferDetailsEnV"
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:7dvm_sdk12OfferDetailsV2enAA0cD2EnVSgvg",
-                "mangledName": "$s7dvm_sdk12OfferDetailsV2enAA0cD2EnVSgvg",
+                "usr": "s:7dvm_sdk12OfferDetailsV9saleStorySSSgvg",
+                "mangledName": "$s7dvm_sdk12OfferDetailsV9saleStorySSSgvg",
+                "moduleName": "dvm_sdk",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "postPriceText",
+            "printedName": "postPriceText",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7dvm_sdk12OfferDetailsV13postPriceTextSSSgvp",
+            "mangledName": "$s7dvm_sdk12OfferDetailsV13postPriceTextSSSgvp",
+            "moduleName": "dvm_sdk",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7dvm_sdk12OfferDetailsV13postPriceTextSSSgvg",
+                "mangledName": "$s7dvm_sdk12OfferDetailsV13postPriceTextSSSgvg",
+                "moduleName": "dvm_sdk",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "prePriceText",
+            "printedName": "prePriceText",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7dvm_sdk12OfferDetailsV12prePriceTextSSSgvp",
+            "mangledName": "$s7dvm_sdk12OfferDetailsV12prePriceTextSSSgvp",
+            "moduleName": "dvm_sdk",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7dvm_sdk12OfferDetailsV12prePriceTextSSSgvg",
+                "mangledName": "$s7dvm_sdk12OfferDetailsV12prePriceTextSSSgvg",
+                "moduleName": "dvm_sdk",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "disclaimer",
+            "printedName": "disclaimer",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7dvm_sdk12OfferDetailsV10disclaimerSSSgvp",
+            "mangledName": "$s7dvm_sdk12OfferDetailsV10disclaimerSSSgvp",
+            "moduleName": "dvm_sdk",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7dvm_sdk12OfferDetailsV10disclaimerSSSgvg",
+                "mangledName": "$s7dvm_sdk12OfferDetailsV10disclaimerSSSgvg",
                 "moduleName": "dvm_sdk",
                 "implicit": true,
                 "accessorKind": "get"
@@ -3202,328 +3240,6 @@
         "declKind": "Struct",
         "usr": "s:7dvm_sdk12OfferDetailsV",
         "mangledName": "$s7dvm_sdk12OfferDetailsV",
-        "moduleName": "dvm_sdk",
-        "declAttributes": [
-          "AccessControl",
-          "RawDocComment"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Decodable",
-            "printedName": "Decodable",
-            "usr": "s:Se",
-            "mangledName": "$sSe"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Encodable",
-            "printedName": "Encodable",
-            "usr": "s:SE",
-            "mangledName": "$sSE"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "OfferDetailsEn",
-        "printedName": "OfferDetailsEn",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "saleStory",
-            "printedName": "saleStory",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:7dvm_sdk14OfferDetailsEnV9saleStorySSSgvp",
-            "mangledName": "$s7dvm_sdk14OfferDetailsEnV9saleStorySSSgvp",
-            "moduleName": "dvm_sdk",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7dvm_sdk14OfferDetailsEnV9saleStorySSSgvg",
-                "mangledName": "$s7dvm_sdk14OfferDetailsEnV9saleStorySSSgvg",
-                "moduleName": "dvm_sdk",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "postPriceText",
-            "printedName": "postPriceText",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:7dvm_sdk14OfferDetailsEnV13postPriceTextSSSgvp",
-            "mangledName": "$s7dvm_sdk14OfferDetailsEnV13postPriceTextSSSgvp",
-            "moduleName": "dvm_sdk",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7dvm_sdk14OfferDetailsEnV13postPriceTextSSSgvg",
-                "mangledName": "$s7dvm_sdk14OfferDetailsEnV13postPriceTextSSSgvg",
-                "moduleName": "dvm_sdk",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "prePriceText",
-            "printedName": "prePriceText",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:7dvm_sdk14OfferDetailsEnV12prePriceTextSSSgvp",
-            "mangledName": "$s7dvm_sdk14OfferDetailsEnV12prePriceTextSSSgvp",
-            "moduleName": "dvm_sdk",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7dvm_sdk14OfferDetailsEnV12prePriceTextSSSgvg",
-                "mangledName": "$s7dvm_sdk14OfferDetailsEnV12prePriceTextSSSgvg",
-                "moduleName": "dvm_sdk",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "disclaimer",
-            "printedName": "disclaimer",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:7dvm_sdk14OfferDetailsEnV10disclaimerSSSgvp",
-            "mangledName": "$s7dvm_sdk14OfferDetailsEnV10disclaimerSSSgvp",
-            "moduleName": "dvm_sdk",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:7dvm_sdk14OfferDetailsEnV10disclaimerSSSgvg",
-                "mangledName": "$s7dvm_sdk14OfferDetailsEnV10disclaimerSSSgvg",
-                "moduleName": "dvm_sdk",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(from:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "OfferDetailsEn",
-                "printedName": "dvm_sdk.OfferDetailsEn",
-                "usr": "s:7dvm_sdk14OfferDetailsEnV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Decoder",
-                "printedName": "Swift.Decoder",
-                "usr": "s:s7DecoderP"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:7dvm_sdk14OfferDetailsEnV4fromACs7Decoder_p_tKcfc",
-            "mangledName": "$s7dvm_sdk14OfferDetailsEnV4fromACs7Decoder_p_tKcfc",
-            "moduleName": "dvm_sdk",
-            "implicit": true,
-            "throwing": true,
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Function",
-            "name": "encode",
-            "printedName": "encode(to:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Encoder",
-                "printedName": "Swift.Encoder",
-                "usr": "s:s7EncoderP"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:7dvm_sdk14OfferDetailsEnV6encode2toys7Encoder_p_tKF",
-            "mangledName": "$s7dvm_sdk14OfferDetailsEnV6encode2toys7Encoder_p_tKF",
-            "moduleName": "dvm_sdk",
-            "implicit": true,
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Struct",
-        "usr": "s:7dvm_sdk14OfferDetailsEnV",
-        "mangledName": "$s7dvm_sdk14OfferDetailsEnV",
         "moduleName": "dvm_sdk",
         "declAttributes": [
           "AccessControl",
@@ -4409,7 +4125,7 @@
           {
             "kind": "Function",
             "name": "createRenderingView",
-            "printedName": "createRenderingView(publicationId:merchantId:storeCode:renderMode:shouldPersistWebsiteDataToDisk:)",
+            "printedName": "createRenderingView(publicationId:merchantId:storeCode:renderMode:language:shouldPersistWebsiteDataToDisk:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -4443,6 +4159,20 @@
               },
               {
                 "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
                 "name": "Bool",
                 "printedName": "Swift.Bool",
                 "hasDefaultArg": true,
@@ -4450,8 +4180,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:7dvm_sdk6DVMSDKC19createRenderingView13publicationId08merchantH09storeCode10renderMode30shouldPersistWebsiteDataToDiskAA011DVMRendererF0CSS_S2SAA06RenderM0OSbtKFZ",
-            "mangledName": "$s7dvm_sdk6DVMSDKC19createRenderingView13publicationId08merchantH09storeCode10renderMode30shouldPersistWebsiteDataToDiskAA011DVMRendererF0CSS_S2SAA06RenderM0OSbtKFZ",
+            "usr": "s:7dvm_sdk6DVMSDKC19createRenderingView13publicationId08merchantH09storeCode10renderMode8language30shouldPersistWebsiteDataToDiskAA011DVMRendererF0CSS_S2SAA06RenderM0OSSSgSbtKFZ",
+            "mangledName": "$s7dvm_sdk6DVMSDKC19createRenderingView13publicationId08merchantH09storeCode10renderMode8language30shouldPersistWebsiteDataToDiskAA011DVMRendererF0CSS_S2SAA06RenderM0OSSSgSbtKFZ",
             "moduleName": "dvm_sdk",
             "static": true,
             "declAttributes": [
@@ -7658,140 +7388,140 @@
     {
       "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Offer.swift",
       "kind": "StringLiteral",
-      "offset": 1345,
+      "offset": 1250,
       "length": 10,
       "value": "\"imageUrl\""
     },
     {
       "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Offer.swift",
       "kind": "StringLiteral",
-      "offset": 1345,
+      "offset": 1250,
       "length": 10,
       "value": "\"imageUrl\""
     },
     {
       "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Offer.swift",
       "kind": "StringLiteral",
-      "offset": 1818,
+      "offset": 1723,
       "length": 14,
       "value": "\"flyer_run_id\""
     },
     {
       "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Offer.swift",
       "kind": "StringLiteral",
-      "offset": 1870,
+      "offset": 1775,
       "length": 30,
       "value": "\"flyer_run_page_diff_group_id\""
     },
     {
       "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Offer.swift",
       "kind": "StringLiteral",
-      "offset": 1918,
+      "offset": 1823,
       "length": 6,
       "value": "\"id_1\""
     },
     {
       "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Offer.swift",
       "kind": "StringLiteral",
-      "offset": 1942,
+      "offset": 1847,
       "length": 6,
       "value": "\"id_2\""
     },
     {
       "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Offer.swift",
       "kind": "StringLiteral",
-      "offset": 1993,
+      "offset": 1898,
       "length": 14,
       "value": "\"page_item_id\""
     },
     {
       "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Offer.swift",
       "kind": "StringLiteral",
-      "offset": 2028,
+      "offset": 1933,
       "length": 9,
       "value": "\"sent_at\""
     },
     {
       "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Offer.swift",
       "kind": "StringLiteral",
-      "offset": 1818,
+      "offset": 1723,
       "length": 14,
       "value": "\"flyer_run_id\""
     },
     {
       "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Offer.swift",
       "kind": "StringLiteral",
-      "offset": 1870,
+      "offset": 1775,
       "length": 30,
       "value": "\"flyer_run_page_diff_group_id\""
     },
     {
       "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Offer.swift",
       "kind": "StringLiteral",
-      "offset": 1918,
+      "offset": 1823,
       "length": 6,
       "value": "\"id_1\""
     },
     {
       "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Offer.swift",
       "kind": "StringLiteral",
-      "offset": 1942,
+      "offset": 1847,
       "length": 6,
       "value": "\"id_2\""
     },
     {
       "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Offer.swift",
       "kind": "StringLiteral",
-      "offset": 1993,
+      "offset": 1898,
       "length": 14,
       "value": "\"page_item_id\""
     },
     {
       "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Offer.swift",
       "kind": "StringLiteral",
-      "offset": 2028,
+      "offset": 1933,
       "length": 9,
       "value": "\"sent_at\""
     },
     {
       "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Offer.swift",
       "kind": "StringLiteral",
-      "offset": 2640,
+      "offset": 2545,
       "length": 16,
       "value": "\"flyerItemIdMap\""
     },
     {
       "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Offer.swift",
       "kind": "StringLiteral",
-      "offset": 2680,
+      "offset": 2585,
       "length": 13,
       "value": "\"flyerTypeId\""
     },
     {
       "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Offer.swift",
       "kind": "StringLiteral",
-      "offset": 2640,
+      "offset": 2545,
       "length": 16,
       "value": "\"flyerItemIdMap\""
     },
     {
       "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Offer.swift",
       "kind": "StringLiteral",
-      "offset": 2680,
+      "offset": 2585,
       "length": 13,
       "value": "\"flyerTypeId\""
     },
     {
       "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Offer.swift",
       "kind": "StringLiteral",
-      "offset": 2842,
+      "offset": 2747,
       "length": 8,
       "value": "\"ttmUrl\""
     },
     {
       "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Offer.swift",
       "kind": "StringLiteral",
-      "offset": 2842,
+      "offset": 2747,
       "length": 8,
       "value": "\"ttmUrl\""
     },
@@ -7819,28 +7549,28 @@
     {
       "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/DVMSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 4339,
+      "offset": 4449,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/DVMSDK.swift",
       "kind": "StringLiteral",
-      "offset": 4955,
+      "offset": 5091,
       "length": 20,
       "value": "\"BuildConfiguration\""
     },
     {
       "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/DVMSDK.swift",
       "kind": "StringLiteral",
-      "offset": 4991,
+      "offset": 5127,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/DVMSDK.swift",
       "kind": "StringLiteral",
-      "offset": 6679,
+      "offset": 6864,
       "length": 28,
       "value": "\"CFBundleShortVersionString\""
     },
@@ -7938,112 +7668,126 @@
     {
       "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/DVMRenderer.swift",
       "kind": "BooleanLiteral",
-      "offset": 1134,
+      "offset": 1164,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/DVMRenderer.swift",
       "kind": "BooleanLiteral",
-      "offset": 2182,
+      "offset": 2328,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/DVMRenderer.swift",
       "kind": "BooleanLiteral",
-      "offset": 2409,
+      "offset": 2555,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/DVMRenderer.swift",
+      "kind": "StringLiteral",
+      "offset": 3051,
+      "length": 27,
+      "value": "\"LANGUAGE_TYPE_\""
+    },
+    {
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/DVMRenderer.swift",
+      "kind": "StringLiteral",
+      "offset": 3077,
+      "length": 14,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/DVMRenderer.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3334,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/DVMRenderer.swift",
       "kind": "BooleanLiteral",
-      "offset": 3058,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/DVMRenderer.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3160,
+      "offset": 3436,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/DVMRenderer.swift",
       "kind": "BooleanLiteral",
-      "offset": 3239,
+      "offset": 3515,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/DVMRenderer.swift",
       "kind": "BooleanLiteral",
-      "offset": 3308,
+      "offset": 3584,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/DVMRenderer.swift",
       "kind": "BooleanLiteral",
-      "offset": 3383,
+      "offset": 3659,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/DVMRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 3430,
+      "offset": 3706,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/DVMRenderer.swift",
       "kind": "IntegerLiteral",
-      "offset": 3744,
+      "offset": 4020,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/DVMRenderer.swift",
       "kind": "BooleanLiteral",
-      "offset": 5053,
+      "offset": 5359,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/DVMRenderer.swift",
       "kind": "StringLiteral",
-      "offset": 6449,
+      "offset": 6755,
       "length": 39,
       "value": "\"init(coder:) has not been implemented\""
     },
     {
       "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/DVMRenderer.swift",
       "kind": "StringLiteral",
-      "offset": 6611,
+      "offset": 6917,
       "length": 28,
       "value": "\"CFBundleShortVersionString\""
     },
     {
       "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/DVMRenderer.swift",
       "kind": "StringLiteral",
-      "offset": 7044,
+      "offset": 7350,
       "length": 26,
       "value": "\"invalid base URL(\""
     },
     {
       "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/DVMRenderer.swift",
       "kind": "StringLiteral",
-      "offset": 7068,
+      "offset": 7374,
       "length": 1,
       "value": "\")\""
     },
     {
       "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/DVMRenderer.swift",
       "kind": "StringLiteral",
-      "offset": 7206,
+      "offset": 7512,
       "length": 34,
       "value": "\"Could not create publication URL\""
     },
@@ -8505,35 +8249,35 @@
     {
       "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Private\/JS Bridge\/Messages\/Payloads\/RequestRenderPayload.swift",
       "kind": "StringLiteral",
-      "offset": 485,
+      "offset": 509,
       "length": 6,
       "value": "\"type\""
     },
     {
       "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Private\/JS Bridge\/Messages\/Payloads\/RequestRenderPayload.swift",
       "kind": "StringLiteral",
-      "offset": 534,
+      "offset": 558,
       "length": 13,
       "value": "\"userContext\""
     },
     {
       "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Private\/JS Bridge\/Messages\/Payloads\/RequestRenderPayload.swift",
       "kind": "StringLiteral",
-      "offset": 485,
+      "offset": 509,
       "length": 6,
       "value": "\"type\""
     },
     {
       "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Private\/JS Bridge\/Messages\/Payloads\/RequestRenderPayload.swift",
       "kind": "StringLiteral",
-      "offset": 534,
+      "offset": 558,
       "length": 13,
       "value": "\"userContext\""
     },
     {
       "filePath": "\/Users\/jenkins\/actions-runner-3\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Private\/JS Bridge\/Messages\/Payloads\/RequestRenderPayload.swift",
       "kind": "StringLiteral",
-      "offset": 1835,
+      "offset": 1877,
       "length": 45,
       "value": "\"Invalid number of keys found, expected one.\""
     }

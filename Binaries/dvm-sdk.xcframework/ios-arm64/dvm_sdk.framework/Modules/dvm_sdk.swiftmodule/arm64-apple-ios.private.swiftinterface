@@ -29,11 +29,6 @@ public struct Offer : Swift.Codable {
   public let contentSource: Swift.String?
   public let legacyIDS: dvm_sdk.Offer.LegacyIDS?
   public struct Details : Swift.Codable {
-    public let en: dvm_sdk.Offer.DetailsEn?
-    public func encode(to encoder: any Swift.Encoder) throws
-    public init(from decoder: any Swift.Decoder) throws
-  }
-  public struct DetailsEn : Swift.Codable {
     public let name: Swift.String?, description: Swift.String?
     public let imageURL: Swift.String?
     public let additionalInfo: dvm_sdk.Offer.AdditionalInfo?
@@ -87,11 +82,6 @@ public struct Metadata : Swift.Codable {
   public init(from decoder: any Swift.Decoder) throws
 }
 public struct OfferDetails : Swift.Codable {
-  public let en: dvm_sdk.OfferDetailsEn?
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct OfferDetailsEn : Swift.Codable {
   public let saleStory: Swift.String?, postPriceText: Swift.String?, prePriceText: Swift.String?, disclaimer: Swift.String?
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
@@ -118,7 +108,7 @@ public typealias PublicationsListCompletion = (dvm_sdk.PublicationsList) -> Swif
   #if compiler(>=5.3) && $AsyncAwait
   public static func fetchPublicationsList(merchantId: Swift.String, storeCode: Swift.String, language: Swift.String?, resultsCount: Swift.Int = 10, pageToken: Swift.String? = nil) async throws -> dvm_sdk.PublicationsList
   #endif
-  public static func createRenderingView(publicationId: Swift.String, merchantId: Swift.String, storeCode: Swift.String, renderMode: dvm_sdk.RenderMode, shouldPersistWebsiteDataToDisk: Swift.Bool = false) throws -> dvm_sdk.DVMRendererView
+  public static func createRenderingView(publicationId: Swift.String, merchantId: Swift.String, storeCode: Swift.String, renderMode: dvm_sdk.RenderMode, language: Swift.String?, shouldPersistWebsiteDataToDisk: Swift.Bool = false) throws -> dvm_sdk.DVMRendererView
   @objc deinit
 }
 public struct PublicationsList : Swift.Decodable {
