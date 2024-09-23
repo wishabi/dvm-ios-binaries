@@ -176,6 +176,7 @@ public struct Publication : Swift.Codable {
   public let dates: dvm_sdk.Dates
   public let details: dvm_sdk.Details
   public let language: Swift.String, source: Swift.String
+  public let renderingTypes: [dvm_sdk.RenderingType]
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -196,6 +197,19 @@ public struct LegacyIDS : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
+public enum RenderingType : Swift.String, Swift.Codable {
+  case unspecified
+  case dvm
+  case sfml
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
 extension dvm_sdk.RenderMode : Swift.Equatable {}
 extension dvm_sdk.RenderMode : Swift.Hashable {}
 extension dvm_sdk.RenderMode : Swift.RawRepresentable {}
+extension dvm_sdk.RenderingType : Swift.Equatable {}
+extension dvm_sdk.RenderingType : Swift.Hashable {}
+extension dvm_sdk.RenderingType : Swift.RawRepresentable {}
