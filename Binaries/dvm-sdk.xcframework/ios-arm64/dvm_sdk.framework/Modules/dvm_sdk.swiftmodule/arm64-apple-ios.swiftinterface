@@ -78,6 +78,9 @@ public struct Flyer : Swift.Codable {
 }
 public struct Metadata : Swift.Codable {
   public let ttmURL: Swift.String?
+  public let externalRef: Swift.String?
+  public let brands: [Swift.String]?
+  public let printItemId: Swift.Int?
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -90,8 +93,10 @@ public struct Pricing : Swift.Codable {
   public let offerType: Swift.String?
   public let price: Swift.Double?
   public let salePrice: Swift.Double?
-  public let percentOff: Swift.Int?
-  public let conditionType: Swift.String?, purchaseMethod: Swift.String?
+  public let amountOff: Swift.Double?
+  public let percentOff: Swift.Double?
+  public let conditionType: Swift.String?
+  public let purchaseMethod: Swift.String?
   public let originalPriceEach: Swift.Bool?
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
@@ -142,6 +147,24 @@ public enum DVMSDKError : Foundation.LocalizedError {
     get
   }
 }
+public struct Media : Swift.Codable {
+  public let type: dvm_sdk.MediaType
+  public let url: Swift.Int
+  public let altText: Swift.String
+  public let primary: Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public enum MediaType : Swift.String, Swift.Codable {
+  case unspecified
+  case dvm
+  case sfml
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
 public protocol DVMRendererDelegate : AnyObject {
   func didTap(result: Swift.Result<dvm_sdk.Offer, dvm_sdk.DVMSDKError>)
   func didFinishLoad()
@@ -177,14 +200,19 @@ public struct Publication : Swift.Codable {
   public let details: dvm_sdk.Details
   public let language: Swift.String, source: Swift.String
   public let renderingTypes: [dvm_sdk.RenderingType]
+  public let legacyIDS: dvm_sdk.LegacyIDS
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
 public struct Details : Swift.Codable {
-  public let name: Swift.String, description: Swift.String
-  public let imageURL: Swift.String
+  public let name: Swift.String?
+  public let description: Swift.String?
+  public let imageURL: Swift.String?
+  public let additionalMedia: [dvm_sdk.Media]
   public let additionalInfo: dvm_sdk.AdditionalInfo
-  public let backgroundImageURL: Swift.String, backgroundColor: Swift.String
+  public let backgroundImageURL: Swift.String?
+  public let backgroundColor: Swift.String?
+  public let tintColor: Swift.String?
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -193,7 +221,9 @@ public struct AdditionalInfo : Swift.Codable {
   public init(from decoder: any Swift.Decoder) throws
 }
 public struct LegacyIDS : Swift.Codable {
-  public let flyerTypeID: Swift.Int, flyerRunID: Swift.Int, flyerID: Swift.Int
+  public let flyerTypeID: Swift.Int?
+  public let flyerRunID: Swift.Int?
+  public let flyerID: Swift.Int?
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -207,6 +237,9 @@ public enum RenderingType : Swift.String, Swift.Codable {
     get
   }
 }
+extension dvm_sdk.MediaType : Swift.Equatable {}
+extension dvm_sdk.MediaType : Swift.Hashable {}
+extension dvm_sdk.MediaType : Swift.RawRepresentable {}
 extension dvm_sdk.RenderMode : Swift.Equatable {}
 extension dvm_sdk.RenderMode : Swift.Hashable {}
 extension dvm_sdk.RenderMode : Swift.RawRepresentable {}
