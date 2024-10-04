@@ -3007,21 +3007,21 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Swift.Int?",
+                "printedName": "Swift.String?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
                   }
                 ],
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "s:7dvm_sdk8MetadataV11printItemIdSiSgvp",
-            "mangledName": "$s7dvm_sdk8MetadataV11printItemIdSiSgvp",
+            "usr": "s:7dvm_sdk8MetadataV11printItemIdSSSgvp",
+            "mangledName": "$s7dvm_sdk8MetadataV11printItemIdSSSgvp",
             "moduleName": "dvm_sdk",
             "declAttributes": [
               "HasStorage",
@@ -3038,21 +3038,21 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "Swift.Int?",
+                    "printedName": "Swift.String?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "Int",
-                        "printedName": "Swift.Int",
-                        "usr": "s:Si"
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:7dvm_sdk8MetadataV11printItemIdSiSgvg",
-                "mangledName": "$s7dvm_sdk8MetadataV11printItemIdSiSgvg",
+                "usr": "s:7dvm_sdk8MetadataV11printItemIdSSSgvg",
+                "mangledName": "$s7dvm_sdk8MetadataV11printItemIdSSSgvg",
                 "moduleName": "dvm_sdk",
                 "implicit": true,
                 "accessorKind": "get"
@@ -8777,155 +8777,155 @@
       "filePath": "\/Users\/jenkins\/actions-runner-2\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Offer.swift",
       "kind": "StringLiteral",
       "offset": 1723,
-      "length": 14,
-      "value": "\"flyer_run_id\""
+      "length": 12,
+      "value": "\"flyerRunId\""
     },
     {
       "filePath": "\/Users\/jenkins\/actions-runner-2\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Offer.swift",
       "kind": "StringLiteral",
-      "offset": 1775,
-      "length": 30,
-      "value": "\"flyer_run_page_diff_group_id\""
+      "offset": 1773,
+      "length": 25,
+      "value": "\"flyerRunPageDiffGroupId\""
     },
     {
       "filePath": "\/Users\/jenkins\/actions-runner-2\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Offer.swift",
       "kind": "StringLiteral",
-      "offset": 1823,
-      "length": 6,
-      "value": "\"id_1\""
+      "offset": 1816,
+      "length": 5,
+      "value": "\"id1\""
     },
     {
       "filePath": "\/Users\/jenkins\/actions-runner-2\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Offer.swift",
       "kind": "StringLiteral",
-      "offset": 1847,
-      "length": 6,
-      "value": "\"id_2\""
+      "offset": 1839,
+      "length": 5,
+      "value": "\"id2\""
     },
     {
       "filePath": "\/Users\/jenkins\/actions-runner-2\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Offer.swift",
       "kind": "StringLiteral",
-      "offset": 1898,
-      "length": 14,
-      "value": "\"page_item_id\""
+      "offset": 1889,
+      "length": 12,
+      "value": "\"pageItemId\""
     },
     {
       "filePath": "\/Users\/jenkins\/actions-runner-2\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Offer.swift",
       "kind": "StringLiteral",
-      "offset": 1933,
-      "length": 9,
-      "value": "\"sent_at\""
+      "offset": 1922,
+      "length": 8,
+      "value": "\"sentAt\""
     },
     {
       "filePath": "\/Users\/jenkins\/actions-runner-2\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Offer.swift",
       "kind": "StringLiteral",
       "offset": 1723,
-      "length": 14,
-      "value": "\"flyer_run_id\""
+      "length": 12,
+      "value": "\"flyerRunId\""
     },
     {
       "filePath": "\/Users\/jenkins\/actions-runner-2\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Offer.swift",
       "kind": "StringLiteral",
-      "offset": 1775,
-      "length": 30,
-      "value": "\"flyer_run_page_diff_group_id\""
+      "offset": 1773,
+      "length": 25,
+      "value": "\"flyerRunPageDiffGroupId\""
     },
     {
       "filePath": "\/Users\/jenkins\/actions-runner-2\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Offer.swift",
       "kind": "StringLiteral",
-      "offset": 1823,
-      "length": 6,
-      "value": "\"id_1\""
+      "offset": 1816,
+      "length": 5,
+      "value": "\"id1\""
     },
     {
       "filePath": "\/Users\/jenkins\/actions-runner-2\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Offer.swift",
       "kind": "StringLiteral",
-      "offset": 1847,
-      "length": 6,
-      "value": "\"id_2\""
+      "offset": 1839,
+      "length": 5,
+      "value": "\"id2\""
     },
     {
       "filePath": "\/Users\/jenkins\/actions-runner-2\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Offer.swift",
       "kind": "StringLiteral",
-      "offset": 1898,
-      "length": 14,
-      "value": "\"page_item_id\""
+      "offset": 1889,
+      "length": 12,
+      "value": "\"pageItemId\""
     },
     {
       "filePath": "\/Users\/jenkins\/actions-runner-2\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Offer.swift",
       "kind": "StringLiteral",
-      "offset": 1933,
-      "length": 9,
-      "value": "\"sent_at\""
+      "offset": 1922,
+      "length": 8,
+      "value": "\"sentAt\""
     },
     {
       "filePath": "\/Users\/jenkins\/actions-runner-2\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Offer.swift",
       "kind": "StringLiteral",
-      "offset": 2545,
+      "offset": 2533,
       "length": 16,
       "value": "\"flyerItemIdMap\""
     },
     {
       "filePath": "\/Users\/jenkins\/actions-runner-2\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Offer.swift",
       "kind": "StringLiteral",
-      "offset": 2585,
+      "offset": 2573,
       "length": 13,
       "value": "\"flyerTypeId\""
     },
     {
       "filePath": "\/Users\/jenkins\/actions-runner-2\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Offer.swift",
       "kind": "StringLiteral",
-      "offset": 2545,
+      "offset": 2533,
       "length": 16,
       "value": "\"flyerItemIdMap\""
     },
     {
       "filePath": "\/Users\/jenkins\/actions-runner-2\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Offer.swift",
       "kind": "StringLiteral",
-      "offset": 2585,
+      "offset": 2573,
       "length": 13,
       "value": "\"flyerTypeId\""
     },
     {
       "filePath": "\/Users\/jenkins\/actions-runner-2\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Offer.swift",
       "kind": "StringLiteral",
-      "offset": 2843,
+      "offset": 2834,
       "length": 8,
       "value": "\"ttmUrl\""
     },
     {
       "filePath": "\/Users\/jenkins\/actions-runner-2\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Offer.swift",
       "kind": "StringLiteral",
-      "offset": 2875,
-      "length": 14,
-      "value": "\"external_ref\""
+      "offset": 2866,
+      "length": 13,
+      "value": "\"externalRef\""
     },
     {
       "filePath": "\/Users\/jenkins\/actions-runner-2\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Offer.swift",
       "kind": "StringLiteral",
-      "offset": 2929,
-      "length": 15,
-      "value": "\"print_item_id\""
+      "offset": 2919,
+      "length": 13,
+      "value": "\"printItemId\""
     },
     {
       "filePath": "\/Users\/jenkins\/actions-runner-2\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Offer.swift",
       "kind": "StringLiteral",
-      "offset": 2843,
+      "offset": 2834,
       "length": 8,
       "value": "\"ttmUrl\""
     },
     {
       "filePath": "\/Users\/jenkins\/actions-runner-2\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Offer.swift",
       "kind": "StringLiteral",
-      "offset": 2875,
-      "length": 14,
-      "value": "\"external_ref\""
+      "offset": 2866,
+      "length": 13,
+      "value": "\"externalRef\""
     },
     {
       "filePath": "\/Users\/jenkins\/actions-runner-2\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Offer.swift",
       "kind": "StringLiteral",
-      "offset": 2929,
-      "length": 15,
-      "value": "\"print_item_id\""
+      "offset": 2919,
+      "length": 13,
+      "value": "\"printItemId\""
     },
     {
       "filePath": "\/Users\/jenkins\/actions-runner-2\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Private\/JS Bridge\/Messages\/BridgeMessage.swift",
@@ -8979,28 +8979,28 @@
     {
       "filePath": "\/Users\/jenkins\/actions-runner-2\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Private\/JS Bridge\/BridgeMessageHandler.swift",
       "kind": "StringLiteral",
-      "offset": 1010,
+      "offset": 1066,
       "length": 66,
       "value": "\"    window.handleMessageFromNative(\""
     },
     {
       "filePath": "\/Users\/jenkins\/actions-runner-2\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Private\/JS Bridge\/BridgeMessageHandler.swift",
       "kind": "StringLiteral",
-      "offset": 1064,
+      "offset": 1120,
       "length": 1,
       "value": "\");\""
     },
     {
       "filePath": "\/Users\/jenkins\/actions-runner-2\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Private\/JS Bridge\/BridgeMessageHandler.swift",
       "kind": "StringLiteral",
-      "offset": 1248,
+      "offset": 1304,
       "length": 103,
       "value": "\"Could not send message to bridge:\""
     },
     {
       "filePath": "\/Users\/jenkins\/actions-runner-2\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Private\/JS Bridge\/BridgeMessageHandler.swift",
       "kind": "StringLiteral",
-      "offset": 1341,
+      "offset": 1397,
       "length": 966,
       "value": "\"\""
     },
@@ -9014,35 +9014,35 @@
     {
       "filePath": "\/Users\/jenkins\/actions-runner-2\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Private\/JS Bridge\/BridgeMessageHandler.swift",
       "kind": "StringLiteral",
-      "offset": 1888,
+      "offset": 1944,
       "length": 38,
       "value": "\"Error: \""
     },
     {
       "filePath": "\/Users\/jenkins\/actions-runner-2\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Private\/JS Bridge\/BridgeMessageHandler.swift",
       "kind": "StringLiteral",
-      "offset": 1925,
+      "offset": 1981,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/jenkins\/actions-runner-2\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Private\/JS Bridge\/BridgeMessageHandler.swift",
       "kind": "StringLiteral",
-      "offset": 1967,
+      "offset": 2023,
       "length": 73,
       "value": "\"Received JS message: \""
     },
     {
       "filePath": "\/Users\/jenkins\/actions-runner-2\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Private\/JS Bridge\/BridgeMessageHandler.swift",
       "kind": "StringLiteral",
-      "offset": 2039,
+      "offset": 2095,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/jenkins\/actions-runner-2\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Private\/JS Bridge\/BridgeMessageHandler.swift",
       "kind": "StringLiteral",
-      "offset": 2267,
+      "offset": 2323,
       "length": 34,
       "value": "\"Could not decode JS message body\""
     },
