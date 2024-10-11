@@ -28,6 +28,7 @@ public struct Offer : Swift.Codable {
   public let offerDetails: dvm_sdk.OfferDetails?
   public let details: dvm_sdk.Details?
   public let contentSource: Swift.String?
+  public let integrations: [dvm_sdk.Integration]?
   public let legacyIDS: dvm_sdk.OfferLegacyIDS?
   public let language: Swift.String?
   public func encode(to encoder: any Swift.Encoder) throws
@@ -162,6 +163,13 @@ public struct Categories : Swift.Codable {
 }
 public struct StringList : Swift.Codable {
   public let data: [Swift.String]?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct Integration : Swift.Codable {
+  public let type: Swift.String?
+  public let program: Swift.String?
+  public let externalProgramID: Swift.String?
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
