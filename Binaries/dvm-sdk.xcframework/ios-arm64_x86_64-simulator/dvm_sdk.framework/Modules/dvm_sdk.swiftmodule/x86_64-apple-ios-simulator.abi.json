@@ -791,6 +791,82 @@
           },
           {
             "kind": "Var",
+            "name": "integrations",
+            "printedName": "integrations",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[dvm_sdk.Integration]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[dvm_sdk.Integration]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Integration",
+                        "printedName": "dvm_sdk.Integration",
+                        "usr": "s:7dvm_sdk11IntegrationV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7dvm_sdk5OfferV12integrationsSayAA11IntegrationVGSgvp",
+            "mangledName": "$s7dvm_sdk5OfferV12integrationsSayAA11IntegrationVGSgvp",
+            "moduleName": "dvm_sdk",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[dvm_sdk.Integration]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[dvm_sdk.Integration]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Integration",
+                            "printedName": "dvm_sdk.Integration",
+                            "usr": "s:7dvm_sdk11IntegrationV"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7dvm_sdk5OfferV12integrationsSayAA11IntegrationVGSgvg",
+                "mangledName": "$s7dvm_sdk5OfferV12integrationsSayAA11IntegrationVGSgvg",
+                "moduleName": "dvm_sdk",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "legacyIDS",
             "printedName": "legacyIDS",
             "children": [
@@ -6324,6 +6400,268 @@
         "moduleName": "dvm_sdk",
         "declAttributes": [
           "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Integration",
+        "printedName": "Integration",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "type",
+            "printedName": "type",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7dvm_sdk11IntegrationV4typeSSSgvp",
+            "mangledName": "$s7dvm_sdk11IntegrationV4typeSSSgvp",
+            "moduleName": "dvm_sdk",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7dvm_sdk11IntegrationV4typeSSSgvg",
+                "mangledName": "$s7dvm_sdk11IntegrationV4typeSSSgvg",
+                "moduleName": "dvm_sdk",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "program",
+            "printedName": "program",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7dvm_sdk11IntegrationV7programSSSgvp",
+            "mangledName": "$s7dvm_sdk11IntegrationV7programSSSgvp",
+            "moduleName": "dvm_sdk",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7dvm_sdk11IntegrationV7programSSSgvg",
+                "mangledName": "$s7dvm_sdk11IntegrationV7programSSSgvg",
+                "moduleName": "dvm_sdk",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "externalProgramID",
+            "printedName": "externalProgramID",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7dvm_sdk11IntegrationV17externalProgramIDSSSgvp",
+            "mangledName": "$s7dvm_sdk11IntegrationV17externalProgramIDSSSgvp",
+            "moduleName": "dvm_sdk",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7dvm_sdk11IntegrationV17externalProgramIDSSSgvg",
+                "mangledName": "$s7dvm_sdk11IntegrationV17externalProgramIDSSSgvg",
+                "moduleName": "dvm_sdk",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Integration",
+                "printedName": "dvm_sdk.Integration",
+                "usr": "s:7dvm_sdk11IntegrationV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:7dvm_sdk11IntegrationV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s7dvm_sdk11IntegrationV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "dvm_sdk",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7dvm_sdk11IntegrationV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s7dvm_sdk11IntegrationV6encode2toys7Encoder_p_tKF",
+            "moduleName": "dvm_sdk",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:7dvm_sdk11IntegrationV",
+        "mangledName": "$s7dvm_sdk11IntegrationV",
+        "moduleName": "dvm_sdk",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
         ]
       },
       {
@@ -13769,56 +14107,56 @@
     {
       "filePath": "\/Users\/jenkins\/actions-runner-1\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Offer\/Offer.swift",
       "kind": "StringLiteral",
-      "offset": 634,
+      "offset": 676,
       "length": 10,
       "value": "\"globalId\""
     },
     {
       "filePath": "\/Users\/jenkins\/actions-runner-1\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Offer\/Offer.swift",
       "kind": "StringLiteral",
-      "offset": 667,
+      "offset": 709,
       "length": 12,
       "value": "\"merchantId\""
     },
     {
       "filePath": "\/Users\/jenkins\/actions-runner-1\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Offer\/Offer.swift",
       "kind": "StringLiteral",
-      "offset": 720,
+      "offset": 762,
       "length": 12,
       "value": "\"productIds\""
     },
     {
       "filePath": "\/Users\/jenkins\/actions-runner-1\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Offer\/Offer.swift",
       "kind": "StringLiteral",
-      "offset": 915,
+      "offset": 979,
       "length": 11,
       "value": "\"legacyIds\""
     },
     {
       "filePath": "\/Users\/jenkins\/actions-runner-1\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Offer\/Offer.swift",
       "kind": "StringLiteral",
-      "offset": 634,
+      "offset": 676,
       "length": 10,
       "value": "\"globalId\""
     },
     {
       "filePath": "\/Users\/jenkins\/actions-runner-1\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Offer\/Offer.swift",
       "kind": "StringLiteral",
-      "offset": 667,
+      "offset": 709,
       "length": 12,
       "value": "\"merchantId\""
     },
     {
       "filePath": "\/Users\/jenkins\/actions-runner-1\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Offer\/Offer.swift",
       "kind": "StringLiteral",
-      "offset": 720,
+      "offset": 762,
       "length": 12,
       "value": "\"productIds\""
     },
     {
       "filePath": "\/Users\/jenkins\/actions-runner-1\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Offer\/Offer.swift",
       "kind": "StringLiteral",
-      "offset": 915,
+      "offset": 979,
       "length": 11,
       "value": "\"legacyIds\""
     },
@@ -14276,6 +14614,20 @@
       "offset": 222,
       "length": 15,
       "value": "\"dvm_sdk.DVMRendererView\""
+    },
+    {
+      "filePath": "\/Users\/jenkins\/actions-runner-1\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Offer\/Integration.swift",
+      "kind": "StringLiteral",
+      "offset": 284,
+      "length": 19,
+      "value": "\"externalProgramId\""
+    },
+    {
+      "filePath": "\/Users\/jenkins\/actions-runner-1\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/Models\/Offer\/Integration.swift",
+      "kind": "StringLiteral",
+      "offset": 284,
+      "length": 19,
+      "value": "\"externalProgramId\""
     },
     {
       "filePath": "\/Users\/jenkins\/actions-runner-1\/_work\/dvm-sdk-ios\/dvm-sdk-ios\/dvm-sdk\/Public\/DVMSDKError.swift",
