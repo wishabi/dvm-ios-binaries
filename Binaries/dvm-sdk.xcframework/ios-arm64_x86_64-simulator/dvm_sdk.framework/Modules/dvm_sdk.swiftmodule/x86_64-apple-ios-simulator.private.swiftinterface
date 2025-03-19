@@ -1,7 +1,6 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
-// swift-module-flags: -target x86_64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name dvm_sdk
-// swift-module-flags-ignorable: -enable-bare-slash-regex
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target x86_64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name dvm_sdk
 import Combine
 import CoreLocation
 import Foundation
@@ -42,7 +41,7 @@ public struct PriceRange : Swift.Codable {
 }
 public typealias PublicationsListCompletion = (dvm_sdk.PublicationsList) -> Swift.Void
 @_hasMissingDesignatedInitializers public class DVMSDK {
-  public static func initialize(clientToken: Swift.String, userId: Swift.String?)
+  public static func initialize(clientToken: Swift.String, userId: Swift.String?, enableLongTap: Swift.Bool = false, longTapMinimumPressDuration: Foundation.TimeInterval? = nil)
   public static func updateUserId(_ userId: Swift.String)
   public static func fetchPublicationsList(merchantId: Swift.String, storeCode: Swift.String, language: Swift.String, resultsCount: Swift.Int = 10, pageToken: Swift.String? = nil, completion: @escaping dvm_sdk.PublicationsListCompletion) throws
   #if compiler(>=5.3) && $AsyncAwait
@@ -141,6 +140,11 @@ public struct Metadata : Swift.Codable {
 }
 @objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class DVMRendererView : UIKit.UIView {
   @_Concurrency.MainActor(unsafe) weak public var rendererDelegate: (any dvm_sdk.DVMRendererDelegate)?
+  @_Concurrency.MainActor(unsafe) public func addAnnotations(type: Swift.String, ids: [Swift.String])
+  @_Concurrency.MainActor(unsafe) public func removeAnnotations(type: Swift.String, ids: [Swift.String])
+  @_Concurrency.MainActor(unsafe) public func scrollToItem(_ id: Swift.String)
+  @_Concurrency.MainActor(unsafe) public func registerAnnotation(type: Swift.String, image: Foundation.URL, size: CoreFoundation.CGSize?, location: dvm_sdk.AnnotationLocation?)
+  @_Concurrency.MainActor(unsafe) public func setVisibility(_ visibility: Swift.Bool)
   @objc deinit
 }
 extension dvm_sdk.DVMRendererView : WebKit.WKNavigationDelegate {
@@ -232,13 +236,28 @@ public enum OfferType : Swift.String, Swift.Codable {
 }
 public protocol DVMRendererDelegate : AnyObject {
   func didTap(result: Swift.Result<dvm_sdk.Offer, dvm_sdk.DVMSDKError>)
-  func didFinishLoad()
+  func didLongTap(result: Swift.Result<dvm_sdk.Offer?, dvm_sdk.DVMSDKError>)
+  func didFinishLoad(legacyMap: [Swift.String : Swift.String])
   func didFailToLoad(error: any Swift.Error)
+  func publicationScrollToResponse(_ offer: dvm_sdk.Offer)
+  func publicationScrollTo(flyerHeight: Swift.Int, viewportBottomOffset: Swift.Int)
+  func publicationImpression(ids: [Swift.String])
 }
 public enum RenderingType : Swift.String, Swift.Codable {
   case unspecified
   case dvm
   case sfml
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum AnnotationLocation : Swift.String, Swift.Codable {
+  case topRight
+  case topLeft
+  case bottomRight
+  case bottomLeft
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
@@ -397,6 +416,9 @@ extension dvm_sdk.OfferType : Swift.RawRepresentable {}
 extension dvm_sdk.RenderingType : Swift.Equatable {}
 extension dvm_sdk.RenderingType : Swift.Hashable {}
 extension dvm_sdk.RenderingType : Swift.RawRepresentable {}
+extension dvm_sdk.AnnotationLocation : Swift.Equatable {}
+extension dvm_sdk.AnnotationLocation : Swift.Hashable {}
+extension dvm_sdk.AnnotationLocation : Swift.RawRepresentable {}
 extension dvm_sdk.RenderMode : Swift.Equatable {}
 extension dvm_sdk.RenderMode : Swift.Hashable {}
 extension dvm_sdk.RenderMode : Swift.RawRepresentable {}
