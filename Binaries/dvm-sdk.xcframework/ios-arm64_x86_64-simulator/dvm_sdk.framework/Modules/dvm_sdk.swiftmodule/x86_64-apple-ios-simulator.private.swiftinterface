@@ -242,6 +242,7 @@ public protocol DVMRendererDelegate : AnyObject {
   func publicationScrollToResponse(_ offer: dvm_sdk.Offer)
   func publicationScrollTo(flyerHeight: Swift.Int, viewportBottomOffset: Swift.Int)
   func publicationImpression(ids: [Swift.String])
+  func publicationTriggeredEngagedVisit()
 }
 public enum RenderingType : Swift.String, Swift.Codable {
   case unspecified

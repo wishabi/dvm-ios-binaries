@@ -8852,6 +8852,30 @@
             ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "publicationTriggeredEngagedVisit",
+            "printedName": "publicationTriggeredEngagedVisit()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7dvm_sdk19DVMRendererDelegateP32publicationTriggeredEngagedVisityyF",
+            "mangledName": "$s7dvm_sdk19DVMRendererDelegateP32publicationTriggeredEngagedVisityyF",
+            "moduleName": "dvm_sdk",
+            "genericSig": "<τ_0_0 where τ_0_0 : dvm_sdk.DVMRendererDelegate>",
+            "sugared_genericSig": "<Self where Self : dvm_sdk.DVMRendererDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Protocol",
