@@ -6135,6 +6135,37 @@
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "scrollViewDidScroll",
+            "printedName": "scrollViewDidScroll(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIScrollView",
+                "printedName": "UIKit.UIScrollView",
+                "usr": "c:objc(cs)UIScrollView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@dvm_sdk@objc(cs)DVMRendererView(im)scrollViewDidScroll:",
+            "mangledName": "$s7dvm_sdk15DVMRendererViewC06scrollD9DidScrollyySo08UIScrollD0CF",
+            "moduleName": "dvm_sdk",
+            "objc_name": "scrollViewDidScroll:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -8867,6 +8898,36 @@
             "declKind": "Func",
             "usr": "s:7dvm_sdk19DVMRendererDelegateP32publicationTriggeredEngagedVisityyF",
             "mangledName": "$s7dvm_sdk19DVMRendererDelegateP32publicationTriggeredEngagedVisityyF",
+            "moduleName": "dvm_sdk",
+            "genericSig": "<τ_0_0 where τ_0_0 : dvm_sdk.DVMRendererDelegate>",
+            "sugared_genericSig": "<Self where Self : dvm_sdk.DVMRendererDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "publicationDidScroll",
+            "printedName": "publicationDidScroll(contentOffset:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGPoint",
+                "printedName": "CoreFoundation.CGPoint",
+                "usr": "c:@S@CGPoint"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7dvm_sdk19DVMRendererDelegateP20publicationDidScroll13contentOffsetySo7CGPointV_tF",
+            "mangledName": "$s7dvm_sdk19DVMRendererDelegateP20publicationDidScroll13contentOffsetySo7CGPointV_tF",
             "moduleName": "dvm_sdk",
             "genericSig": "<τ_0_0 where τ_0_0 : dvm_sdk.DVMRendererDelegate>",
             "sugared_genericSig": "<Self where Self : dvm_sdk.DVMRendererDelegate>",

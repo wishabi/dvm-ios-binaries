@@ -326,6 +326,7 @@ SWIFT_CLASS("_TtC7dvm_sdk15DVMRendererView")
 - (void)scrollViewDidZoom:(UIScrollView * _Nonnull)scrollView;
 - (void)scrollViewDidEndZooming:(UIScrollView * _Nonnull)scrollView withView:(UIView * _Nullable)view atScale:(CGFloat)scale;
 - (void)scrollViewDidScrollToTop:(UIScrollView * _Nonnull)scrollView;
+- (void)scrollViewDidScroll:(UIScrollView * _Nonnull)scrollView;
 @end
 
 #endif
