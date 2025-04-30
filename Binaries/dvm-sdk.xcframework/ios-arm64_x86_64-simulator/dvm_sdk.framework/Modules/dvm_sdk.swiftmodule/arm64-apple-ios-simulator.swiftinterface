@@ -41,7 +41,7 @@ public struct PriceRange : Swift.Codable {
 }
 public typealias PublicationsListCompletion = (dvm_sdk.PublicationsList) -> Swift.Void
 @_hasMissingDesignatedInitializers public class DVMSDK {
-  public static func initialize(clientToken: Swift.String, userId: Swift.String?, enableLongTap: Swift.Bool = false, longTapMinimumPressDuration: Foundation.TimeInterval? = nil)
+  public static func initialize(clientToken: Swift.String, userId: Swift.String?, enableLongTap: Swift.Bool = false, longTapMinimumPressDuration: Foundation.TimeInterval? = nil, baseURLString: Swift.String? = nil, publicationsURLString: Swift.String? = nil)
   public static func updateUserId(_ userId: Swift.String)
   public static func fetchPublicationsList(merchantId: Swift.String, storeCode: Swift.String, language: Swift.String, resultsCount: Swift.Int = 10, pageToken: Swift.String? = nil, completion: @escaping dvm_sdk.PublicationsListCompletion) throws
   #if compiler(>=5.3) && $AsyncAwait
