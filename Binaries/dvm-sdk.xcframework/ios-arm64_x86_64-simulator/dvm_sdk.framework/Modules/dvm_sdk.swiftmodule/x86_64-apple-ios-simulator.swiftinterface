@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0.2 effective-5.10 (swiftlang-6.0.2.1.2 clang-1600.0.26.4)
-// swift-module-flags: -target x86_64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name dvm_sdk
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
+// swift-module-flags: -target x86_64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name dvm_sdk
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
 import Combine
 import CoreLocation
 import Foundation
@@ -42,11 +42,19 @@ public struct PriceRange : Swift.Codable {
 }
 public typealias PublicationsListCompletion = (dvm_sdk.PublicationsList) -> Swift.Void
 @_hasMissingDesignatedInitializers public class DVMSDK {
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func initialize(clientToken: Swift.String, userId: Swift.String?, enableLongTap: Swift.Bool = false, longTapMinimumPressDuration: Foundation.TimeInterval? = nil, baseURLString: Swift.String? = nil, publicationsURLString: Swift.String? = nil)
+  #endif
   public static func updateUserId(_ userId: Swift.String)
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func fetchPublicationsList(merchantId: Swift.String, storeCode: Swift.String, language: Swift.String, resultsCount: Swift.Int = 10, pageToken: Swift.String? = nil, completion: @escaping dvm_sdk.PublicationsListCompletion) throws
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func fetchPublicationsList(merchantId: Swift.String, storeCode: Swift.String, language: Swift.String?, resultsCount: Swift.Int = 10, pageToken: Swift.String? = nil) async throws -> dvm_sdk.PublicationsList
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func createRenderingView(publicationId: Swift.String, merchantId: Swift.String, storeCode: Swift.String, renderMode: dvm_sdk.RenderMode, language: Swift.String?, shouldPersistWebsiteDataToDisk: Swift.Bool = false) throws -> dvm_sdk.DVMRendererView
+  #endif
   @objc deinit
 }
 public struct Details : Swift.Codable {
@@ -142,20 +150,30 @@ public struct Metadata : Swift.Codable {
   @_Concurrency.MainActor @preconcurrency public func addAnnotations(type: Swift.String, ids: [Swift.String])
   @_Concurrency.MainActor @preconcurrency public func removeAnnotations(type: Swift.String, ids: [Swift.String])
   @_Concurrency.MainActor @preconcurrency public func scrollToItem(_ id: Swift.String)
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency public func registerAnnotation(type: Swift.String, image: Foundation.URL, size: CoreFoundation.CGSize?, location: dvm_sdk.AnnotationLocation?)
+  #endif
   @_Concurrency.MainActor @preconcurrency public func setVisibility(_ visibility: Swift.Bool)
   @objc deinit
 }
 extension dvm_sdk.DVMRendererView : WebKit.WKNavigationDelegate {
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func webView(_ webView: WebKit.WKWebView, didFinish navigation: WebKit.WKNavigation!)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func webView(_ webView: WebKit.WKWebView, didFail navigation: WebKit.WKNavigation!, withError error: any Swift.Error)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func webView(_ webView: WebKit.WKWebView, didFailProvisionalNavigation navigation: WebKit.WKNavigation!, withError error: any Swift.Error)
+  #endif
 }
 extension dvm_sdk.DVMRendererView : UIKit.UIScrollViewDelegate {
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func scrollViewDidEndDecelerating(_ scrollView: UIKit.UIScrollView)
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func scrollViewDidEndDragging(_ scrollView: UIKit.UIScrollView, willDecelerate decelerate: Swift.Bool)
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func scrollViewDidZoom(_ scrollView: UIKit.UIScrollView)
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func scrollViewDidEndZooming(_ scrollView: UIKit.UIScrollView, with view: UIKit.UIView?, atScale scale: CoreFoundation.CGFloat)
+  #endif
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func scrollViewDidScrollToTop(_ scrollView: UIKit.UIScrollView)
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func scrollViewDidScroll(_ scrollView: UIKit.UIScrollView)
 }
@@ -184,9 +202,11 @@ public enum DVMSDKError : Foundation.LocalizedError {
   case offerDetailsError(detail: Swift.String)
   case internalNetworkErrorBadRequestComponents
   case internalNetworkErrorBadBaseURL
+  #if compiler(>=5.3) && $NonescapableTypes
   public var errorDescription: Swift.String? {
     get
   }
+  #endif
 }
 public struct Media : Swift.Codable {
   public let type: dvm_sdk.MediaType?
@@ -200,7 +220,9 @@ public enum MediaType : Swift.String, Swift.Codable {
   case unspecified
   case image
   case video
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -228,15 +250,21 @@ public enum OfferType : Swift.String, Swift.Codable {
   case specifiedPrice
   case upToXOff
   case upToXPercentOff
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
   }
 }
 public protocol DVMRendererDelegate : AnyObject {
+  #if compiler(>=5.3) && $NonescapableTypes
   func didTap(result: Swift.Result<dvm_sdk.Offer, dvm_sdk.DVMSDKError>)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   func didLongTap(result: Swift.Result<dvm_sdk.Offer?, dvm_sdk.DVMSDKError>)
+  #endif
   func didFinishLoad(legacyMap: [Swift.String : Swift.String])
   func didFailToLoad(error: any Swift.Error)
   func publicationScrollToResponse(_ offer: dvm_sdk.Offer)
@@ -245,11 +273,23 @@ public protocol DVMRendererDelegate : AnyObject {
   func publicationTriggeredEngagedVisit()
   func publicationDidScroll(contentOffset: CoreFoundation.CGPoint)
 }
+extension dvm_sdk.DVMRendererDelegate {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func didLongTap(result: Swift.Result<dvm_sdk.Offer?, dvm_sdk.DVMSDKError>)
+  #endif
+  public func publicationScrollToResponse(_ offer: dvm_sdk.Offer)
+  public func publicationScrollTo(flyerHeight: Swift.Int, viewportBottomOffset: Swift.Int)
+  public func publicationImpression(ids: [Swift.String])
+  public func publicationTriggeredEngagedVisit()
+  public func publicationDidScroll(contentOffset: CoreFoundation.CGPoint)
+}
 public enum RenderingType : Swift.String, Swift.Codable {
   case unspecified
   case dvm
   case sfml
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -260,7 +300,9 @@ public enum AnnotationLocation : Swift.String, Swift.Codable {
   case topLeft
   case bottomRight
   case bottomLeft
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -277,7 +319,9 @@ public struct OfferLegacyIDS : Swift.Codable {
 public enum RenderMode : Swift.String, Swift.Codable {
   case sfml
   case dvm
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -293,11 +337,13 @@ public struct Pricing : Swift.Codable {
   public let purchaseMethods: [dvm_sdk.PurchaseMethod]?
   public let qualifyingQuantity: Swift.Int?
   public let rewardQuantity: Swift.Int?
+  #if compiler(>=5.3) && $NonescapableTypes
   @dvm_sdk.Indirect public var qualifyingOffer: dvm_sdk.Offer? {
     get
     set
     _modify
   }
+  #endif
   public let salePriceRange: dvm_sdk.PriceRange?
   public let priceRange: dvm_sdk.PriceRange?
   public let loyaltyPoints: Swift.String?
@@ -314,7 +360,9 @@ public enum ConditionType : Swift.String, Swift.Codable {
   case coupon
   case couponAndCard
   case mailInRebate
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -334,7 +382,9 @@ public struct JSONCodingKeys : Swift.CodingKey {
   public var stringValue: Swift.String
   public init(stringValue: Swift.String)
   public var intValue: Swift.Int?
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(intValue: Swift.Int)
+  #endif
 }
 extension Swift.KeyedDecodingContainer {
   public func decode(_ type: [Swift.String : Any].Type, forKey key: K) throws -> [Swift.String : Any]
@@ -349,8 +399,12 @@ extension Swift.KeyedEncodingContainerProtocol where Self.Key == dvm_sdk.JSONCod
   public mutating func encode(_ value: [Swift.String : Any]) throws
 }
 extension Swift.KeyedEncodingContainerProtocol {
+  #if compiler(>=5.3) && $NonescapableTypes
   public mutating func encode(_ value: [Swift.String : Any]?, forKey key: Self.Key) throws
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public mutating func encode(_ value: [Any]?, forKey key: Self.Key) throws
+  #endif
 }
 extension Swift.UnkeyedEncodingContainer {
   public mutating func encode(_ value: [Any]) throws
@@ -391,7 +445,9 @@ public enum PurchaseMethod : Swift.String, Swift.Codable {
   case unspecified
   case online
   case inStore
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get

@@ -7630,6 +7630,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -9307,6 +9314,192 @@
               "RawDocComment"
             ],
             "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "didLongTap",
+            "printedName": "didLongTap(result:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Result",
+                "printedName": "Swift.Result<dvm_sdk.Offer?, dvm_sdk.DVMSDKError>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "dvm_sdk.Offer?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Offer",
+                        "printedName": "dvm_sdk.Offer",
+                        "usr": "s:7dvm_sdk5OfferV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DVMSDKError",
+                    "printedName": "dvm_sdk.DVMSDKError",
+                    "usr": "s:7dvm_sdk11DVMSDKErrorO"
+                  }
+                ],
+                "usr": "s:s6ResultO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7dvm_sdk19DVMRendererDelegatePAAE10didLongTap6resultys6ResultOyAA5OfferVSgAA11DVMSDKErrorOG_tF",
+            "mangledName": "$s7dvm_sdk19DVMRendererDelegatePAAE10didLongTap6resultys6ResultOyAA5OfferVSgAA11DVMSDKErrorOG_tF",
+            "moduleName": "dvm_sdk",
+            "genericSig": "<τ_0_0 where τ_0_0 : dvm_sdk.DVMRendererDelegate>",
+            "sugared_genericSig": "<Self where Self : dvm_sdk.DVMRendererDelegate>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "publicationScrollToResponse",
+            "printedName": "publicationScrollToResponse(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Offer",
+                "printedName": "dvm_sdk.Offer",
+                "usr": "s:7dvm_sdk5OfferV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7dvm_sdk19DVMRendererDelegatePAAE27publicationScrollToResponseyyAA5OfferVF",
+            "mangledName": "$s7dvm_sdk19DVMRendererDelegatePAAE27publicationScrollToResponseyyAA5OfferVF",
+            "moduleName": "dvm_sdk",
+            "genericSig": "<τ_0_0 where τ_0_0 : dvm_sdk.DVMRendererDelegate>",
+            "sugared_genericSig": "<Self where Self : dvm_sdk.DVMRendererDelegate>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "publicationScrollTo",
+            "printedName": "publicationScrollTo(flyerHeight:viewportBottomOffset:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7dvm_sdk19DVMRendererDelegatePAAE19publicationScrollTo11flyerHeight20viewportBottomOffsetySi_SitF",
+            "mangledName": "$s7dvm_sdk19DVMRendererDelegatePAAE19publicationScrollTo11flyerHeight20viewportBottomOffsetySi_SitF",
+            "moduleName": "dvm_sdk",
+            "genericSig": "<τ_0_0 where τ_0_0 : dvm_sdk.DVMRendererDelegate>",
+            "sugared_genericSig": "<Self where Self : dvm_sdk.DVMRendererDelegate>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "publicationImpression",
+            "printedName": "publicationImpression(ids:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7dvm_sdk19DVMRendererDelegatePAAE21publicationImpression3idsySaySSG_tF",
+            "mangledName": "$s7dvm_sdk19DVMRendererDelegatePAAE21publicationImpression3idsySaySSG_tF",
+            "moduleName": "dvm_sdk",
+            "genericSig": "<τ_0_0 where τ_0_0 : dvm_sdk.DVMRendererDelegate>",
+            "sugared_genericSig": "<Self where Self : dvm_sdk.DVMRendererDelegate>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "publicationTriggeredEngagedVisit",
+            "printedName": "publicationTriggeredEngagedVisit()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7dvm_sdk19DVMRendererDelegatePAAE32publicationTriggeredEngagedVisityyF",
+            "mangledName": "$s7dvm_sdk19DVMRendererDelegatePAAE32publicationTriggeredEngagedVisityyF",
+            "moduleName": "dvm_sdk",
+            "genericSig": "<τ_0_0 where τ_0_0 : dvm_sdk.DVMRendererDelegate>",
+            "sugared_genericSig": "<Self where Self : dvm_sdk.DVMRendererDelegate>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "publicationDidScroll",
+            "printedName": "publicationDidScroll(contentOffset:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGPoint",
+                "printedName": "CoreFoundation.CGPoint",
+                "usr": "c:@S@CGPoint"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7dvm_sdk19DVMRendererDelegatePAAE20publicationDidScroll13contentOffsetySo7CGPointV_tF",
+            "mangledName": "$s7dvm_sdk19DVMRendererDelegatePAAE20publicationDidScroll13contentOffsetySo7CGPointV_tF",
+            "moduleName": "dvm_sdk",
+            "genericSig": "<τ_0_0 where τ_0_0 : dvm_sdk.DVMRendererDelegate>",
+            "sugared_genericSig": "<Self where Self : dvm_sdk.DVMRendererDelegate>",
+            "isFromExtension": true,
             "funcSelfKind": "NonMutating"
           }
         ],
@@ -12765,6 +12958,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -15208,6 +15408,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
