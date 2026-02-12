@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/dvm_sdk-Swift.h</key>
 		<data>
-		BCGbTPVmHAOfxaV82tpbnATwiqw=
+		NA4vW1jfKgg+OjJCDmQxDCv1TMQ=
 		</data>
 		<key>Headers/dvm_sdk.h</key>
 		<data>
@@ -14,27 +14,27 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		RPBfTyaXhRqMJURBvGhnJJ1Zaic=
+		YtmHr7VBA3lLGRJtdnIx0YZt6+Y=
 		</data>
 		<key>Modules/dvm_sdk.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		XISdUmet69nU9IdTE5XWDvnPesY=
+		ciu/XreNokA1JfW7HJFCRZ8hBuY=
 		</data>
 		<key>Modules/dvm_sdk.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		e0LvaWlvK15j2g3ZsRHj8MQQjrE=
+		d1LyyaRXKOYnsHe+zNv1WT9HC/A=
 		</data>
 		<key>Modules/dvm_sdk.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		AIlfvRHu7tsepRX12jg0ah3EfyU=
+		SbTEnQSL1Ay7cnJWm1hxRoPGKuo=
 		</data>
 		<key>Modules/dvm_sdk.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		e0LvaWlvK15j2g3ZsRHj8MQQjrE=
+		d1LyyaRXKOYnsHe+zNv1WT9HC/A=
 		</data>
 		<key>Modules/dvm_sdk.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		ruIdsnEU6mhGVLoaY4Nzt5LSScs=
+		O1dQU9nI3QaSGG/mT52DZl56yOg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -47,7 +47,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			lcjFxpNSJLAT3BmeKK/bQr93DwkoaFzVV2FLsIMNJr4=
+			YoHV3G6Gw3ZMmZ10cxHdFUf+mQiSdi+/N3URQF5NcB0=
 			</data>
 		</dict>
 		<key>Headers/dvm_sdk.h</key>
@@ -61,35 +61,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			WEjYflKcfD4X+V0fQKetbylAvYmvZxRkFdcGWJZfmBU=
+			DFDY8LtEaGdqH9mM3wzRz++azmFx65oMZCejMAEnZ/A=
 			</data>
 		</dict>
 		<key>Modules/dvm_sdk.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9H0K25BXN1YjQOIv2MlBgSIlMaETJh239S9wkl01IK8=
+			vjmkaKEZE48z3ZP9bd/setM89fVYjUWvSP3f+PBOnwI=
 			</data>
 		</dict>
 		<key>Modules/dvm_sdk.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			JmzJ/95DxwFhryQ+xvGgIu08WDi59eGhVwX7wn15rD4=
+			5hikU86T0KQIVDD7tq/mSMibNsm0zTwYAeavLlGdIfs=
 			</data>
 		</dict>
 		<key>Modules/dvm_sdk.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9H0K25BXN1YjQOIv2MlBgSIlMaETJh239S9wkl01IK8=
+			vjmkaKEZE48z3ZP9bd/setM89fVYjUWvSP3f+PBOnwI=
 			</data>
 		</dict>
 		<key>Modules/dvm_sdk.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Pc6NEFKe78DKeElIx6zg+1zOngzPpZGzzqa9HxF7EQ0=
+			+hTcB8jWzfvr4/63+PpUDboX+++G+zMKPisUTQBr62E=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
