@@ -20,8 +20,8 @@ let package = Package(
         // file limit, which the framework now exceeds once dSYMs are included.
       .binaryTarget(
           name: "dvm-sdk-binary",
-          url: "https://github.com/wishabi/dvm-ios-binaries/releases/download/3.7.0/dvm-sdk.xcframework.zip",
-          checksum: "ea5c1c5ffd3f35b339386404813e3cf5daefcd764e519b6f1236776afd2a122c"
+          url: "https://github.com/wishabi/dvm-ios-binaries/releases/download/3.9.0/dvm-sdk.xcframework.zip",
+          checksum: "1761acf20c00942eadbade4974c0dd6e295c6bdb4d7a1e1c952e3e95f6528057"
       )
     ]
 )
